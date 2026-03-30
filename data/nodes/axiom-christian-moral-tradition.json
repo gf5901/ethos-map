@@ -1,0 +1,12 @@
+{
+  "id": "axiom-christian-moral-tradition",
+  "type": "axiom",
+  "name": "Christian scripture and tradition as moral authority",
+  "plainSummary": "Within Catholic and broader Christian moral theology, sacred scripture and the Church's teaching office (where accepted) supply norms for virtue, vice, and conscience.",
+  "whyRoot": "For frameworks that take this stance, lists like the capital vices are not mere opinion: they classify recurring ways human willing goes wrong. The graph stops here for believers; others can still read the downstream principles as historically influential moral categories.",
+  "description": "Foundational claim, for faith-based branches of the graph, that Christian scripture and ecclesial tradition (especially in Catholic and Orthodox moral theology) authoritatively frame the classification of serious moral failure, including the tradition of capital vices (deadly sins).",
+  "tags": ["christianity", "moral-theology", "faith-based", "thomistic"],
+  "citations": {},
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

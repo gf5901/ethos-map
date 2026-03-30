@@ -1,0 +1,11 @@
+{
+  "id": "thomistic-natural-law",
+  "name": "Thomistic natural law (seed)",
+  "description": "Faith and reason together: revelation and ecclesial teaching on one side, and natural law as knowable in principle on the other—with the capital vices branch linking to common legal categories.",
+  "axiomIds": [
+    "axiom-christian-moral-tradition",
+    "axiom-natural-law-accessible-by-reason"
+  ],
+  "color": "#92400E",
+  "icon": "book"
+}

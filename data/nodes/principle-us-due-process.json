@@ -2,7 +2,7 @@
   "id": "principle-us-due-process",
   "type": "principle",
   "name": "Due process of law",
-  "description": "Government must follow fair procedures—and in substantive strands, respect certain baseline protections—before depriving persons of life, liberty, or property (Fifth Amendment as to federal power; Fourteenth as to states).",
+  "description": "Due process requires government to follow fair procedures—and in substantive strands, to respect certain baseline protections—before depriving persons of life, liberty, or property (Fifth Amendment as to federal power; Fourteenth as to states).",
   "tags": ["us-law", "constitutional-law", "procedure", "rights"],
   "foundationStrength": 5,
   "foundationStrengthRationale": "Deeply embedded in federal and state practice; central to modern rights litigation.",
@@ -15,7 +15,7 @@
   ],
   "cons": [
     {
-      "claim": "Open-ended phrasing invites wide judicial discretion and disagreement over what process is “due” and what substance is protected.",
+      "claim": "Open-ended phrasing invites wide judicial discretion and disagreement over what process is due and what substance is protected.",
       "evidence": "Long-running doctrinal splits over incorporation, fundamental rights, and administrative due process.",
       "citations": ["due-process-open-texture"]
     }
@@ -24,7 +24,7 @@
     {
       "id": "us-federal",
       "status": "enacted",
-      "citation": "U.S. Const. amends. V, XIV § 1"
+      "citation": "U.S. Const. amends. V, XIV, Section 1"
     }
   ],
   "citations": {

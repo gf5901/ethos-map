@@ -1,0 +1,37 @@
+{
+  "id": "legal-concept-criminal-force-against-person",
+  "type": "legal-concept",
+  "name": "Criminal force and violence against the person",
+  "description": "Legal constructs governing assault, battery, homicide, and related offenses—where the state punishes unjustified injury or credible threats, often discussed alongside moral critiques of wrath and disproportionate anger.",
+  "tags": ["criminal-law", "violence", "deadly-sins-bridge", "christianity"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Core of penal law everywhere; self-defense and proportionality doctrines differ by system.",
+  "pros": [
+    {
+      "claim": "Protects bodily integrity and public order through clear prohibitions on unlawful harm.",
+      "evidence": "Battery and assault statutes and common-law crimes form a stable cross-jurisdictional family.",
+      "citations": ["violence-offenses-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Legal 'force' doctrines do not track spiritual 'wrath' perfectly; justified force and systemic violence raise separate questions.",
+      "evidence": "Policing, war, and self-defense carve out large exceptions that moral theology treats under different headings.",
+      "citations": ["justified-force-boundaries"]
+    }
+  ],
+  "citations": {
+    "violence-offenses-overview": {
+      "title": "Offenses against the person — introductory survey",
+      "type": "book",
+      "year": 2018
+    },
+    "justified-force-boundaries": {
+      "title": "Self-defense, necessity, and justified force — legal and ethical boundaries",
+      "type": "journal-article",
+      "year": 2020
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

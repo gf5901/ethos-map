@@ -1,12 +1,12 @@
 {
   "id": "axiom-civilian-legal-order",
   "type": "axiom",
-  "name": "The law should fit together as one clear system",
-  "plainSummary": "Legal rules should fit together into a clear, coherent system—often worked out through careful reasoning and codes—rather than a messy pile of unrelated edicts.",
+  "name": "Coherent legal order",
+  "plainSummary": "The framework holds that legal rules should fit together into a clear, coherent system—often worked out through careful reasoning and codes—rather than a messy pile of unrelated edicts.",
   "whyRoot": "People need to know what duties and rights they actually have. If law is a tangle of contradictions, planning and fairness collapse. Coherence is treated as foundational because predictable, unified rules are what let strangers coordinate without constant conflict.",
   "description": "Foundational civilian ideal that legal rules should form a coherent body, developed through reasoned commentary and (where appropriate) codification, traceable to Roman models of ordered private law and public authority.",
   "tags": ["foundational", "roman-law", "civil-law", "legal-theory"],
   "citations": {},
   "createdAt": "2026-03-29",
-  "updatedAt": "2026-03-29"
+  "updatedAt": "2026-03-30"
 }

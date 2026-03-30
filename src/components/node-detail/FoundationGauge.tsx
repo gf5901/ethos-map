@@ -6,7 +6,7 @@ export function FoundationGauge({ value }: { value: number }) {
   const v = Math.round(Math.max(1, Math.min(5, value)));
   return (
     <div className="space-y-1">
-      <div className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-400">
+      <div className="flex items-center gap-1.5 text-label text-slate-500">
         <Anchor className="size-3.5 shrink-0" aria-hidden />
         Foundation strength
       </div>

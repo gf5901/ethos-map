@@ -1,0 +1,43 @@
+{
+  "id": "legal-concept-sexual-offenses-consent-and-privacy",
+  "type": "legal-concept",
+  "name": "Sexual offenses, consent, and privacy",
+  "description": "Legal constructs addressing non-consensual sexual acts, exploitation of incapacity, and privacy-related sexual wrongs—areas where modern law foregrounds autonomy and harm, while historical and religious moral language often emphasized lust and chastity.",
+  "tags": [
+    "criminal-law",
+    "sexual-offenses",
+    "consent",
+    "deadly-sins-bridge",
+    "christianity"
+  ],
+  "foundationStrength": 3,
+  "foundationStrengthRationale": "Rapid legal and social change around consent, age, and digital harms; high contestation.",
+  "pros": [
+    {
+      "claim": "Centers consent and protection of vulnerable persons in ways many frameworks converge on.",
+      "evidence": "International human-rights instruments and national reforms increasingly align on consent-centric models.",
+      "citations": ["consent-reform-trends"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Moral-theological 'lust' and legal 'lack of consent' are not coextensive; marriage law, obscenity, and morals offenses show persistent divergence.",
+      "evidence": "Jurisdictions differ on criminalization of adult consensual conduct and on sex work.",
+      "citations": ["morals-law-divergence"]
+    }
+  ],
+  "citations": {
+    "consent-reform-trends": {
+      "title": "Sexual offense law and consent — reform trends",
+      "type": "journal-article",
+      "year": 2021
+    },
+    "morals-law-divergence": {
+      "title": "Moral regulation vs. harm principle in sexual offense law",
+      "type": "journal-article",
+      "year": 2017
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

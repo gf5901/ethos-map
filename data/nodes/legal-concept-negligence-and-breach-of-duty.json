@@ -1,0 +1,37 @@
+{
+  "id": "legal-concept-negligence-and-breach-of-duty",
+  "type": "legal-concept",
+  "name": "Negligence and breach of duty of care",
+  "description": "Private-law constructs imposing liability when a person fails to meet a standard of care owed to others—one legal analogue (among others) to moral blame for culpable omission or sloth, though civil negligence does not require spiritual apathy.",
+  "tags": ["torts", "civil-law", "duty", "deadly-sins-bridge", "christianity"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Common-law negligence and civilian analogues are well developed; standards of care remain fact-specific.",
+  "pros": [
+    {
+      "claim": "Translates avoidable carelessness into remediable harm without requiring criminal intent.",
+      "evidence": "Negligence dominates accident compensation in many jurisdictions.",
+      "citations": ["negligence-standard-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Clinical depression, burnout, and structural overload undermine easy mapping from 'sloth' to legal breach.",
+      "evidence": "Disability and labor contexts show that non-performance often lacks moral blameworthiness.",
+      "citations": ["capacity-and-breach-note"]
+    }
+  ],
+  "citations": {
+    "negligence-standard-overview": {
+      "title": "The negligence standard — introductory treatise overview",
+      "type": "book",
+      "year": 2017
+    },
+    "capacity-and-breach-note": {
+      "title": "Capacity, mental health, and breach of duty — tort law perspectives",
+      "type": "journal-article",
+      "year": 2020
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

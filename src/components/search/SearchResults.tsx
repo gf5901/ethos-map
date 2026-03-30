@@ -20,18 +20,21 @@ export function SearchResults({
 }) {
   if (queryTooShort) {
     return (
-      <p className="flex flex-col items-center gap-2 px-3 py-6 text-center text-sm text-slate-500">
+      <p className="flex max-w-sm flex-col items-center gap-2 px-3 py-6 text-center text-sm text-slate-500">
         <Keyboard className="size-8 opacity-50" aria-hidden />
-        Type at least 2 characters to search.
+        <span>Type at least two characters to search.</span>
       </p>
     );
   }
 
   if (!results.length) {
     return (
-      <p className="flex flex-col items-center gap-2 px-3 py-6 text-center text-sm text-slate-500">
+      <p className="flex max-w-sm flex-col items-center gap-2 px-3 py-6 text-center text-sm text-slate-500">
         <SearchX className="size-8 opacity-50" aria-hidden />
-        No matching nodes.
+        <span>No matching nodes.</span>
+        <span className="text-xs text-slate-400">
+          Try a different term or open browse to explore the tree.
+        </span>
       </p>
     );
   }
@@ -47,7 +50,7 @@ export function SearchResults({
         <button
           key={r.item.id}
           type="button"
-          className={`flex w-full flex-col gap-0.5 px-3 py-2 text-left text-sm hover:bg-slate-100 dark:hover:bg-slate-800 ${
+          className={`flex w-full flex-col gap-0.5 px-3 py-2 text-left text-sm hover:bg-slate-100 focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-inset dark:hover:bg-slate-800 ${
             i === activeIndex ? "bg-slate-100 dark:bg-slate-800" : ""
           }`}
           onClick={() => onSelect(r.item.id)}

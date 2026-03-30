@@ -2,7 +2,7 @@
   "id": "legal-concept-right-to-experimental-therapy",
   "type": "legal-concept",
   "name": "Right to access experimental therapy",
-  "description": "A legal concept describing circumstances under which patients may access therapies not yet fully approved under ordinary regulatory pathways.",
+  "description": "Legal concept covering circumstances under which patients may access therapies not yet fully approved under ordinary regulatory pathways.",
   "tags": ["medical-autonomy", "experimental-access"],
   "foundationStrength": 3,
   "foundationStrengthRationale": "Depends heavily on jurisdiction-specific statutes and regulatory exceptions.",

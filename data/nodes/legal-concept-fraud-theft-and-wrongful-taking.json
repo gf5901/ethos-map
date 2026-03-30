@@ -1,0 +1,37 @@
+{
+  "id": "legal-concept-fraud-theft-and-wrongful-taking",
+  "type": "legal-concept",
+  "name": "Fraud, theft, and wrongful appropriation",
+  "description": "Legal constructs that prohibit acquiring or withholding another's property or entitlement through deception, stealth, or abuse of trust—often discussed alongside moral critiques of covetousness and envy.",
+  "tags": ["criminal-law", "property", "deadly-sins-bridge", "christianity"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Near-universal in legal systems; exact elements and defenses vary sharply by jurisdiction.",
+  "pros": [
+    {
+      "claim": "Gives institutional teeth to prohibitions on taking what is not one's due.",
+      "evidence": "Criminal and civil doctrines worldwide address theft, fraud, embezzlement, and conversion with overlapping rationales.",
+      "citations": ["theft-fraud-model-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Moral categories like greed or envy do not map one-to-one onto legal labels; many thefts are impulsive or survival-driven.",
+      "evidence": "Sentencing and poverty debates show heterogeneous motives behind economically similar acts.",
+      "citations": ["motive-heterogeneity-note"]
+    }
+  ],
+  "citations": {
+    "theft-fraud-model-overview": {
+      "title": "Theft and fraud — comparative criminal-law overview",
+      "type": "journal-article",
+      "year": 2016
+    },
+    "motive-heterogeneity-note": {
+      "title": "Economic motive, need, and property offenses — criminological survey",
+      "type": "journal-article",
+      "year": 2019
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

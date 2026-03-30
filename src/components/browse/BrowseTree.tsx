@@ -107,7 +107,7 @@ function TreeRow({
         {hasChildren ? (
           <button
             type="button"
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded text-slate-600 hover:bg-slate-200/80 dark:text-slate-400 dark:hover:bg-slate-800"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded text-slate-600 hover:bg-slate-200/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:text-slate-400 dark:hover:bg-slate-800"
             aria-label={expanded ? "Collapse branch" : "Expand branch"}
             onClick={toggleExpand}
             onKeyDown={onKeyDownExpand}
@@ -123,7 +123,7 @@ function TreeRow({
         )}
         <button
           type="button"
-          className="min-w-0 flex-1 truncate text-left font-medium text-slate-900 dark:text-slate-50"
+          className="min-w-0 flex-1 truncate rounded-sm text-left font-medium text-slate-900 outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] dark:text-slate-50 dark:focus-visible:ring-offset-slate-950"
           onClick={() => onSelectNode(nodeId)}
           onKeyDown={onKeyDownRow}
         >
@@ -138,7 +138,7 @@ function TreeRow({
           href={`/node/${nodeId}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 rounded p-1.5 text-sky-600 hover:bg-sky-100 hover:underline dark:text-sky-400 dark:hover:bg-sky-950/50"
+          className="shrink-0 rounded p-1.5 text-sky-600 outline-none hover:bg-sky-100 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:text-sky-400 dark:hover:bg-sky-950/50"
           aria-label={`Open full page for ${flowNode.data.name}`}
           onClick={(e) => e.stopPropagation()}
         >
@@ -146,10 +146,7 @@ function TreeRow({
         </Link>
       </div>
       {hasChildren && expanded ? (
-        <div
-          role="group"
-          className="ml-4 border-l border-slate-200 pl-2 dark:border-slate-700"
-        >
+        <div role="group" className="ml-4 border-l border-[var(--border)] pl-2">
           {childIds.map((cid) => (
             <TreeRow
               key={`${reactKey}/${cid}`}
@@ -201,10 +198,20 @@ export function BrowseTree({ graph }: { graph: CompiledGraph }) {
   if (roots.length === 0) {
     return (
       <div
-        className="flex flex-1 items-center justify-center p-8 text-slate-500"
+        className="flex max-w-md flex-1 flex-col items-center justify-center gap-3 p-8 text-center text-sm text-slate-500"
         role="status"
       >
-        No nodes to display.
+        <p>No nodes to display.</p>
+        <p className="text-xs text-slate-400">
+          Try{" "}
+          <Link
+            href="/"
+            className="font-medium text-sky-600 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:text-sky-400"
+          >
+            returning to the map
+          </Link>{" "}
+          or reloading the page.
+        </p>
       </div>
     );
   }

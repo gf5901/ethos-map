@@ -1,23 +1,46 @@
 ---
-description: Next.js App Router, React 19, and client/server boundaries for this repo
+description: Next.js 16 App Router, React 19, and client/server boundaries for this repo
 globs: src/**/*.{tsx,ts}
 alwaysApply: false
 ---
 
 # Next.js & React (frontend)
 
-- **Default to Server Components** in `app/`. Add `"use client"` only when the file needs browser APIs, event handlers, or client-only libraries (e.g. `@xyflow/react`, Zustand hooks).
-- **Colocate** UI next to routes or under `components/` by feature. Prefer **named exports** for leaf components if the file already uses that style; stay consistent within a folder.
-- **Imports**: use the `@/` alias (`@/components/...`, `@/lib/...`, `@/hooks/...`, `@/store/...`). Avoid deep relative chains like `../../../`.
+## Server / Client architecture
+
+- **Server Components are the default.** Every file under `app/` renders on the server unless marked `"use client"`. Add the directive only when the file needs browser APIs, event handlers, hooks with state, or client-only libraries (e.g. `@xyflow/react`, Zustand hooks).
+- **Push `"use client"` to the leaves.** Keep the client boundary as small as possible. Use the **composition pattern** — pass Server Components as `children` or props into a Client Component wrapper so the server-rendered tree stays large.
+- **Never import a Server Component directly inside a Client Component** — pass it as `children` or a render prop instead.
+
+## Data fetching & caching
+
+- Fetch data in **Server Components** or **Server Actions**. Avoid `useEffect` for data that can be loaded server-side.
+- Use **`Suspense` boundaries** around slow async components so the static shell streams immediately (target < 200 ms TTFB).
+- Use **`"use cache"`** on components or functions that benefit from component-level caching within a route (Next.js 16). Prefer this over choosing between fully static or fully dynamic routes.
+- `fetch()` in Server Components **auto-deduplicates** identical requests within the same render — no need for manual caching of the same call.
+
+## React 19 patterns
+
+- **React Compiler** handles memoization automatically. Do **not** scatter manual `useMemo`, `useCallback`, or `memo` unless profiling reveals the compiler missed a hot path.
+- **`use()` hook** — use in Client Components to unwrap promises or read context. Prefer over `await` in client code.
+- **Actions & forms** — use `useActionState` for form submissions instead of verbose `useState` + `useTransition`. Use `useFormStatus` for pending indicators without prop drilling. Use `useOptimistic` for instant feedback before server confirmation.
+- Prefer **deriving values during render** over `useEffect`. Reserve `useEffect` for subscriptions, DOM sync, and one-time client setup.
+
+## Project conventions
+
+- **Colocate** UI next to routes or under `components/` by feature. Prefer **named exports** for leaf components; stay consistent within a folder.
+- **Imports**: use the `@/` alias (`@/components/…`, `@/lib/…`, `@/hooks/…`, `@/store/…`). Avoid deep relative chains like `../../../`.
 - **State**: use **Zustand** in `store/` for cross-route UI state; keep local state in `useState` / `useReducer` when it does not need to be global.
 - **Types**: explicit props types for components; reuse types from `@/lib/types` for graph/domain data.
-- **Effects**: prefer deriving state with `useMemo` / passing props over `useEffect` for data that can be computed during render. Use `useEffect` for subscriptions, DOM sync, and one-time client setup.
-- **Performance**: memoize expensive lists or flow node maps when profiling shows churn; avoid premature `useMemo`/`memo` everywhere.
-- **Biome** owns formatting and many lint rules—run `npm run lint` after substantive edits; do not disable rules without a short comment and a good reason.
+- **Biome** owns formatting and lint — run `npm run lint` after substantive edits; do not disable rules without a comment and a good reason.
+- **Turbopack** is the default bundler in Next.js 16 for `next dev` and `next build`. No flag needed.
 
 ```tsx
-// Client boundary only where needed
+// Composition pattern: Client wrapper + Server children
 "use client";
-
 import { useAppStore } from "@/store/appStore";
+export function InteractiveShell({ children }: { children: React.ReactNode }) {
+  const zoom = useAppStore((s) => s.zoom);
+  return <div style={{ zoom }}>{children}</div>;
+}
 ```

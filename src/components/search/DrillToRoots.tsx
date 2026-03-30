@@ -27,11 +27,11 @@ export function DrillToRootsButton({
   return (
     <button
       type="button"
-      className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+      className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-[var(--surface)] px-3 py-1.5 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:border-slate-600 dark:text-slate-100 dark:hover:bg-slate-800"
       onClick={handleClick}
     >
       <Sparkles className="size-3.5 shrink-0" aria-hidden />
-      I&apos;m feeling foundational
+      Trace to roots
     </button>
   );
 }

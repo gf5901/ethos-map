@@ -2,11 +2,11 @@
   "id": "axiom-minimize-suffering",
   "type": "axiom",
   "name": "Reduce suffering",
-  "plainSummary": "Morally, we should care about reducing pain and hardship (and often improving well-being) for everyone affected by a decision.",
-  "whyRoot": "Suffering is the clearest signal that something is going wrong for a subject of experience. Many ethical systems stop here because once you admit suffering counts, you have a reason to weigh outcomes and side effects instead of treating people as props in someone else’s story.",
+  "plainSummary": "Morally, reducing pain and hardship (and often improving well-being) for everyone affected by a decision carries weight.",
+  "whyRoot": "Suffering is the clearest signal that something is going wrong for a subject of experience. Many ethical systems stop here because once suffering counts, there is reason to weigh outcomes and side effects instead of treating people as props in someone else's story.",
   "description": "Classical utilitarian starting point: moral weight attaches to the reduction of suffering (and often the promotion of well-being) across those affected.",
   "tags": ["foundational", "utilitarian", "welfare"],
   "citations": {},
   "createdAt": "2026-03-29",
-  "updatedAt": "2026-03-29"
+  "updatedAt": "2026-03-30"
 }

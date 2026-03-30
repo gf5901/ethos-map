@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-sloth",
+  "type": "principle",
+  "name": "Sloth (acedia) as capital vice",
+  "plainSummary": "In this list, sloth is not mere laziness: it is spiritual apathy—refusal of the good one owes, especially toward God and neighbor.",
+  "description": "Derived principle: acedia (sloth) is the capital vice of spiritual torpor or sorrow at the demands of the good—classically distinct from clinical depression, though the two raise difficult pastoral and medical questions.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "spirituality"],
+  "foundationStrength": 3,
+  "foundationStrengthRationale": "Rich in monastic literature; modern readers often confuse acedia with laziness or depression, requiring careful interpretation.",
+  "pros": [
+    {
+      "claim": "Names civic and relational failure when people withdraw from obligations they could meet.",
+      "evidence": "Parallel discussions exist in virtue ethics (effort, diligence) and organizational ethics (negligence).",
+      "citations": ["st-ii-ii-q35", "acedia-monastic-literature"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Moral language of sloth can blame victims of depression, burnout, or structural barriers.",
+      "evidence": "Mental health and disability advocates caution against spiritualizing illness or exhaustion.",
+      "citations": ["acedia-depression-distinction"]
+    }
+  ],
+  "citations": {
+    "st-ii-ii-q35": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 35 (acedia / sloth)",
+      "type": "book",
+      "year": 1273
+    },
+    "acedia-monastic-literature": {
+      "title": "Acedia in desert monastic sources — scholarly overview",
+      "type": "book",
+      "year": 2005
+    },
+    "acedia-depression-distinction": {
+      "title": "Spiritual acedia and clinical depression — pastoral and ethical boundaries",
+      "type": "journal-article",
+      "year": 2018
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

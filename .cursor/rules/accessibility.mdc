@@ -1,0 +1,55 @@
+---
+description: Accessibility standards and WCAG 2.2 AA compliance for all UI
+globs: src/**/*.{tsx,ts,css}
+alwaysApply: false
+---
+
+# Accessibility (WCAG 2.2 AA)
+
+EthosMap targets **WCAG 2.2 Level AA**. Every new component and page must meet these requirements.
+
+## Semantic HTML first
+
+- Use native elements (`<button>`, `<a>`, `<nav>`, `<dialog>`, `<details>`, `<input>`) before reaching for ARIA. Native elements come with keyboard behavior and screen-reader announcements for free.
+- All images need `alt` text (or `alt=""` + `aria-hidden="true"` for purely decorative images).
+- Use landmark elements (`<main>`, `<header>`, `<aside>`, `<footer>`, `<nav>`) so screen readers can skip to sections.
+
+## Keyboard & focus
+
+- Every interactive element must be **operable via keyboard** (Tab, Enter, Space, Escape, arrow keys for composite widgets).
+- **Visible focus indicator**: never remove `outline` without replacing it with an equally visible custom ring. Use `focus-visible:` utilities for keyboard-only indicators.
+- **Focus Not Obscured (2.4.11)**: focused elements must not be fully hidden behind sticky headers, footers, or overlays. Scroll into view or offset as needed.
+- **Focus management**: when a modal or panel opens, move focus into it; when it closes, return focus to the trigger. When a list item is deleted, move focus to the nearest sibling.
+
+## Color & contrast
+
+- **Text contrast**: 4.5 : 1 for normal text, 3 : 1 for large text (≥ 18 px or ≥ 14 px bold).
+- **UI component contrast**: 3 : 1 for borders, icons, and interactive elements against their background.
+- **Never rely on color alone** to convey meaning — pair with icons, patterns, or text labels (e.g. node-type badges should include text, not just color).
+
+## Target size
+
+- **Minimum 24 × 24 px** touch/click target for all interactive elements (WCAG 2.5.8). Prefer 44 × 44 px for primary actions on touch devices.
+- Inline links within body text are exempt, but icon-only buttons are not.
+
+## Drag & drop alternatives (2.5.7)
+
+- Any drag-and-drop interaction (e.g. panning the graph canvas) must have a **single-pointer alternative** (click/tap to select, buttons to reposition) unless dragging is essential to the function.
+- The graph canvas pan/zoom should also work via keyboard (arrow keys to pan, +/- to zoom).
+
+## Forms & errors
+
+- Every input has a **visible, persistent `<label>`** (not placeholder-only).
+- Group related fields with `<fieldset>` + `<legend>`.
+- Error messages are **programmatically associated** via `aria-describedby` or `aria-errormessage` and announced to screen readers.
+- Do not rely on color alone for error state — add an icon or prefix text.
+
+## Motion
+
+- Wrap non-essential animations in `motion-safe:` or `@media (prefers-reduced-motion: no-preference)`.
+- Auto-playing animations that last longer than 5 seconds must have a pause/stop control.
+
+## Live regions
+
+- Use `aria-live="polite"` (or `role="status"`) for non-urgent updates (search result counts, toast notifications).
+- Use `aria-live="assertive"` only for critical alerts that must interrupt the user.

@@ -111,6 +111,153 @@
       "to": "principle-bona-fides",
       "type": "derived-from",
       "strength": "strong"
+    },
+    {
+      "id": "edge-017",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-pride",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-018",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-greed",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-019",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-lust",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-020",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-envy",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-021",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-gluttony",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-022",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-wrath",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-023",
+      "from": "axiom-christian-moral-tradition",
+      "to": "principle-deadly-sin-sloth",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-024",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-pride",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-025",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-greed",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-026",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-lust",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-027",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-envy",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-028",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-gluttony",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-029",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-wrath",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-030",
+      "from": "axiom-natural-law-accessible-by-reason",
+      "to": "principle-deadly-sin-sloth",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-031",
+      "from": "principle-deadly-sin-greed",
+      "to": "legal-concept-fraud-theft-and-wrongful-taking",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-032",
+      "from": "principle-deadly-sin-envy",
+      "to": "legal-concept-fraud-theft-and-wrongful-taking",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-033",
+      "from": "principle-deadly-sin-wrath",
+      "to": "legal-concept-criminal-force-against-person",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-034",
+      "from": "principle-deadly-sin-lust",
+      "to": "legal-concept-sexual-offenses-consent-and-privacy",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-035",
+      "from": "principle-deadly-sin-gluttony",
+      "to": "legal-concept-intoxication-and-substance-offenses",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-036",
+      "from": "principle-deadly-sin-pride",
+      "to": "legal-concept-contempt-obstruction-and-abuse-of-process",
+      "type": "derived-from",
+      "strength": "weak"
+    },
+    {
+      "id": "edge-037",
+      "from": "principle-deadly-sin-sloth",
+      "to": "legal-concept-negligence-and-breach-of-duty",
+      "type": "derived-from",
+      "strength": "moderate"
     }
   ]
 }

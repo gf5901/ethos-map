@@ -1,0 +1,37 @@
+{
+  "id": "legal-concept-contempt-obstruction-and-abuse-of-process",
+  "type": "legal-concept",
+  "name": "Contempt, obstruction, and abuse of legal process",
+  "description": "Legal constructs punishing disrespect or defiance toward courts and lawful authority, false statements to investigators, and manipulation of procedure—loosely analogous to moral concerns about hubris, defiance of legitimate order, and contempt for truth in institutional settings.",
+  "tags": ["procedure", "criminal-law", "courts", "deadly-sins-bridge", "christianity"],
+  "foundationStrength": 3,
+  "foundationStrengthRationale": "Contempt powers vary; tension between dignity, free expression, and institutional authority is ongoing.",
+  "pros": [
+    {
+      "claim": "Protects the integrity of adjudication and investigation when cooperation and candor are essential.",
+      "evidence": "Obstruction and perjury-adjacent offenses are standard features of modern legal systems.",
+      "citations": ["obstruction-integrity-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "'Pride' as a spiritual vice is only weakly correlated with legal contempt; dissent and civil disobedience raise distinct legitimacy questions.",
+      "evidence": "Political theory and constitutional law debate when defiance of authority is justified.",
+      "citations": ["disobedience-legitimacy-debate"]
+    }
+  ],
+  "citations": {
+    "obstruction-integrity-overview": {
+      "title": "Obstruction of justice — doctrinal overview",
+      "type": "book",
+      "year": 2015
+    },
+    "disobedience-legitimacy-debate": {
+      "title": "Civil disobedience and legal obligation — philosophical debate",
+      "type": "journal-article",
+      "year": 2019
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

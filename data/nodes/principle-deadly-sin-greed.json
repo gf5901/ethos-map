@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-greed",
+  "type": "principle",
+  "name": "Greed (avaritia) as capital vice",
+  "plainSummary": "In this list, greed denotes a disordered love of possessing—holding or seeking wealth in a way that subordinates justice, charity, or the common good.",
+  "description": "Derived principle: avaritia (greed or covetousness) is the capital vice of excessive attachment to material goods, including insatiable acquisition and hoarding, classically contrasted with liberality and justice.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "economic-ethics"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Widely echoed in religious and secular critiques of exploitation; boundaries between prudent provision and disordered attachment remain debated.",
+  "pros": [
+    {
+      "claim": "Illuminates structural harms when acquisition eclipses duty to others.",
+      "evidence": "Traditions link greed to fraud, usury (in historical sense), neglect of the poor, and environmental overreach.",
+      "citations": ["ccc-2536", "st-ii-ii-q118"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Risk of moralizing wealth without distinguishing legitimate enterprise, saving, and innovation.",
+      "evidence": "Market societies debate when profit-seeking is productive versus exploitative; blanket talk of greed can oversimplify.",
+      "citations": ["economic-ambiguity-note"]
+    }
+  ],
+  "citations": {
+    "ccc-2536": {
+      "title": "Catechism of the Catholic Church — on covetousness and the tenth commandment (paragraph 2536)",
+      "type": "book",
+      "year": 1997
+    },
+    "st-ii-ii-q118": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 118 (avarice)",
+      "type": "book",
+      "year": 1273
+    },
+    "economic-ambiguity-note": {
+      "title": "Profit, virtue, and greed in market ethics — introductory discussion",
+      "type": "journal-article",
+      "year": 2018
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

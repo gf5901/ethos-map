@@ -98,7 +98,7 @@ export function SearchBar() {
     <>
       <button
         type="button"
-        className="hidden w-64 items-center gap-2 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-left text-sm text-slate-600 shadow-sm md:flex dark:border-slate-600 dark:bg-slate-900 dark:text-slate-300"
+        className="hidden w-64 items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-left text-sm text-slate-600 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 sm:flex dark:text-slate-300"
         onClick={() => setOpen(true)}
         aria-haspopup="dialog"
       >
@@ -110,7 +110,7 @@ export function SearchBar() {
       </button>
       <button
         type="button"
-        className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm md:hidden dark:border-slate-600 dark:bg-slate-900"
+        className="inline-flex min-h-11 min-w-11 items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 sm:hidden"
         onClick={() => setOpen(true)}
         aria-label="Open search"
       >
@@ -123,7 +123,7 @@ export function SearchBar() {
           className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-24"
           role="dialog"
           aria-modal="true"
-          aria-label="Search nodes"
+          aria-labelledby="ethos-search-field-label"
         >
           <button
             type="button"
@@ -132,18 +132,25 @@ export function SearchBar() {
             onClick={() => setOpen(false)}
           />
           <div
-            className="relative z-10 w-full max-w-lg rounded-xl border border-slate-200 bg-white shadow-xl dark:border-slate-700 dark:bg-slate-950"
+            className="relative z-10 w-full max-w-lg rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-xl"
             onPointerDown={(e) => e.stopPropagation()}
           >
             <button
               type="button"
-              className="absolute right-2 top-2 z-20 rounded-md p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-800 dark:hover:bg-slate-800 dark:hover:text-slate-200"
+              className="absolute right-2 top-2 z-20 rounded-md p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:hover:bg-slate-800 dark:hover:text-slate-200"
               onClick={() => setOpen(false)}
               aria-label="Close search"
             >
               <X className="size-5" aria-hidden />
             </button>
-            <div className="border-b border-slate-200 p-3 pr-12 dark:border-slate-700">
+            <div className="border-b border-[var(--border)] p-3 pr-12">
+              <label
+                id="ethos-search-field-label"
+                htmlFor="ethos-search-input"
+                className="mb-2 block text-label text-slate-500"
+              >
+                Search
+              </label>
               <div className="relative">
                 <Search
                   className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-slate-400"
@@ -152,8 +159,8 @@ export function SearchBar() {
                 <input
                   ref={inputRef}
                   id="ethos-search-input"
-                  className="w-full rounded-md border border-slate-300 bg-white py-2 pl-9 pr-3 text-sm outline-none ring-sky-500 focus:ring-2 dark:border-slate-600 dark:bg-slate-900"
-                  placeholder="Search laws, principles, concepts…"
+                  className="w-full rounded-md border border-slate-300 bg-[var(--surface)] py-2 pl-9 pr-3 text-sm outline-none ring-sky-500 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface)] dark:border-slate-600"
+                  placeholder="e.g. statute name, principle, concept"
                   value={q}
                   onChange={(e) => setQ(e.target.value)}
                   onKeyDown={onInputKeyDown}

@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-lust",
+  "type": "principle",
+  "name": "Lust (luxuria) as capital vice",
+  "plainSummary": "In this tradition, lust denotes sexual desire disordered by object, circumstance, or intent—treating persons as mere means to appetite.",
+  "description": "Derived principle: luxuria (lust) is the capital vice of inordinate sexual appetite—desire that ignores temperance, consent, covenant, or the integral good of persons, as classically articulated in Christian sexual ethics.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "sexual-ethics"],
+  "foundationStrength": 3,
+  "foundationStrengthRationale": "The category is central in traditional manuals of moral theology; modern disputes over consent, marriage, and autonomy make application highly contested.",
+  "pros": [
+    {
+      "claim": "Highlights objectification and appetite-driven harm that many ethical frameworks also condemn.",
+      "evidence": "Overlaps with secular concerns about exploitation, coercion, and pornography's incentives.",
+      "citations": ["ccc-2351", "st-ii-ii-q153"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Traditional definitions often clash with contemporary views on sexual autonomy, LGBTQ dignity, and plural family forms.",
+      "evidence": "Ongoing moral and legal debates show deep disagreement on what counts as disordered versus healthy desire.",
+      "citations": ["sexual-ethics-pluralism-note"]
+    }
+  ],
+  "citations": {
+    "ccc-2351": {
+      "title": "Catechism of the Catholic Church — lust and chastity (paragraph 2351)",
+      "type": "book",
+      "year": 1997
+    },
+    "st-ii-ii-q153": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 153 (lust)",
+      "type": "book",
+      "year": 1273
+    },
+    "sexual-ethics-pluralism-note": {
+      "title": "Pluralism in sexual ethics — survey and critique",
+      "type": "journal-article",
+      "year": 2020
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

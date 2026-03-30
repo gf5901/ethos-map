@@ -1,12 +1,12 @@
 {
   "id": "axiom-equal-moral-consideration",
   "type": "axiom",
-  "name": "Everyone deserves equal consideration",
-  "plainSummary": "Everyone who counts in the discussion should matter equally when we weigh rights, burdens, and opportunities, unless there is a specific reason to treat people differently.",
-  "whyRoot": "Arbitrary favoritism turns law into club rules. Starting from equal consideration forces reasons for unequal treatment into the open. It is a root because it blocks ‘my group counts more’ as a silent default.",
+  "name": "Equal moral consideration",
+  "plainSummary": "The framework holds that everyone who counts in the discussion should matter equally when weighing rights, burdens, and opportunities, unless a specific reason supports different treatment.",
+  "whyRoot": "Arbitrary favoritism turns law into club rules. Starting from equal consideration forces reasons for unequal treatment into the open. It is a root because it blocks treating 'my group counts more' as a silent default.",
   "description": "Foundational claim that all persons (or all in a defined scope) deserve equal standing in moral and often legal reasoning about rights, burdens, and opportunities, absent specific differences that justify unequal treatment.",
   "tags": ["foundational", "justice", "rights"],
   "citations": {},
   "createdAt": "2026-03-29",
-  "updatedAt": "2026-03-29"
+  "updatedAt": "2026-03-30"
 }

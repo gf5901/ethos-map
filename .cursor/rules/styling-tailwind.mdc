@@ -1,19 +1,63 @@
 ---
-description: Tailwind CSS v4 and global styling conventions
+description: Tailwind CSS v4, design tokens, color, and typography conventions
 globs: src/**/*.tsx,src/**/*.css
 alwaysApply: false
 ---
 
 # Styling (Tailwind v4)
 
-- **Utility-first** in TSX: prefer Tailwind classes over ad-hoc inline `style` unless a value is truly dynamic.
-- **Design tokens**: shared colors and theme live in `src/app/globals.css` (`:root`, `.dark`, CSS variables). Extend tokens there instead of hard-coding hex values in many components.
-- **Dark mode**: this project uses a **class-based** dark variant (`@custom-variant dark`). Respect `.dark` on an ancestor when adding new themed surfaces.
-- **Global CSS**: keep `globals.css` for imports, `@layer`, variables, and rare global resets—not for feature-specific component styling (that belongs in components + utilities).
-- **Consistency**: match spacing, typography, and border radius patterns used in sibling components (e.g. headers, cards on the graph).
-- **Typography**: follow `docs/typography.md`. Prefer the shared `text-label` utility for uppercase section/field labels; use `max-w-prose` or `max-w-readable` for long reading blocks; keep page titles at `text-3xl font-semibold tracking-tight` unless a screen clearly needs a different level.
+## Utility-first
+
+- Prefer Tailwind classes in TSX over inline `style` unless a value is truly dynamic at runtime.
+- Match spacing, typography, and border-radius patterns used in sibling components (headers, cards, panels).
+
+## Design tokens (three-layer hierarchy)
+
+1. **Base (primitives)** — raw color, spacing, and radius values defined in `@theme` inside `globals.css`.
+2. **Semantic** — purpose-driven CSS variables (e.g. `--background`, `--foreground`, `--surface`, `--primary`) that reference primitives. Use these in components.
+3. **Component** — scoped overrides only when a component genuinely diverges from the semantic layer.
+
+Use the `@theme` directive with Tailwind v4 namespace conventions:
+- `--color-*` → generates `bg-*`, `text-*`, `border-*` utilities.
+- `--spacing-*` → generates padding/margin utilities.
+- `--font-*` → generates font-family utilities.
+
+Extend tokens in `globals.css` instead of hard-coding hex/oklch values across many components.
+
+## Color
+
+- **Prefer OKLCH** for new color definitions — perceptually uniform lightness, wide-gamut (P3), and predictable contrast ratios. Example: `oklch(0.55 0.15 250)`.
+- Create tints/shades by adjusting only the **L** (lightness) channel while keeping C and H stable.
+- Use `color-mix()` for one-off opacity/blend variants rather than duplicating tokens.
+- Provide an sRGB fallback when using P3-gamut values (`@supports (color: oklch(0 0 0))`).
+- Validate text-on-background contrast against **WCAG 2.2 AA** (4.5 : 1 body, 3 : 1 large text / UI).
+
+## Dark mode
+
+- Class-based dark variant (`@custom-variant dark`). Respect `.dark` on an ancestor.
+- Toggle semantic tokens (e.g. `--background`, `--foreground`) in the `.dark` selector — components should rarely need per-element `dark:` overrides when tokens are correct.
+
+## Typography
+
+- Follow `docs/typography.md`. Key reminders:
+  - **System-first sans** stack via `--font-sans` — no extra font downloads unless added via `next/font`.
+  - **16 px (`1rem`) base** for body copy; never shrink it globally.
+  - **`max-w-prose`** or **`max-w-readable`** for long reading blocks (~65 ch).
+  - **Page titles**: `text-3xl font-semibold tracking-tight`.
+  - **Labels / overlines**: shared `text-label` utility (uppercase, small, semibold, wide tracking).
+  - **Uppercase**: reserved for labels and badges, never sentences.
+
+## Motion & animation
+
+- Define reusable motion tokens (`--duration-fast`, `--ease-out`, etc.) in `@theme` for consistency.
+- Respect **`prefers-reduced-motion`**: wrap non-essential animations in `motion-safe:` or gate with `@media (prefers-reduced-motion: no-preference)`.
+- Keep transitions short (150–250 ms) and purposeful — avoid decorative animation that doesn't aid comprehension.
+
+## Global CSS
+
+- `globals.css` is for imports, `@layer`, `@theme`, variables, and rare global resets — not feature-specific component styles.
 
 ```tsx
-// Prefer utilities + CSS variables from globals
-<div className="rounded-lg border border-neutral-200 bg-[var(--background)] px-4 py-2 dark:border-neutral-800" />
+// Prefer semantic tokens over raw values
+<div className="rounded-lg border border-[var(--border)] bg-[var(--surface)] px-4 py-2" />
 ```

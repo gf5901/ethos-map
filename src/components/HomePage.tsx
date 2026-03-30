@@ -28,7 +28,8 @@ function HomePageContent() {
       <Header viewMode={viewMode} />
       {status === "loading" || status === "idle" ? (
         <div
-          className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 text-slate-500"
+          id="main-content"
+          className="flex min-h-0 flex-1 scroll-mt-16 flex-col items-center justify-center gap-3 text-slate-500"
           aria-live="polite"
           aria-busy="true"
         >
@@ -40,14 +41,17 @@ function HomePageContent() {
         </div>
       ) : status === "error" ? (
         <div
-          className="flex flex-1 flex-col items-center justify-center gap-4 px-4 text-center text-red-600"
+          id="main-content"
+          className="flex flex-1 scroll-mt-16 flex-col items-center justify-center gap-4 px-4 text-center text-red-600"
           role="alert"
         >
           <AlertCircle className="size-10 shrink-0" aria-hidden />
-          <p>{error ?? "Failed to load data"}</p>
+          <p className="max-w-md text-sm leading-relaxed">
+            {error ?? "We couldn't load the graph. Check your connection and try again."}
+          </p>
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-md border border-red-300 bg-white px-4 py-2 text-sm font-medium text-red-700 hover:bg-red-50 dark:border-red-800 dark:bg-slate-950 dark:text-red-400 dark:hover:bg-red-950/40"
+            className="inline-flex items-center gap-2 rounded-md border border-red-300 bg-[var(--surface)] px-4 py-2 text-sm font-medium text-red-700 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-950/40"
             onClick={retry}
           >
             <RotateCcw className="size-4" aria-hidden />
@@ -55,7 +59,10 @@ function HomePageContent() {
           </button>
         </div>
       ) : (
-        <main className="relative flex h-0 min-h-0 flex-1 flex-col overflow-hidden">
+        <main
+          id="main-content"
+          className="relative flex h-0 min-h-0 flex-1 scroll-mt-16 flex-col overflow-hidden"
+        >
           {viewMode === "graph" ? (
             <GraphCanvas />
           ) : graph ? (
@@ -80,11 +87,12 @@ function HomePageContent() {
 function HomePageSuspenseFallback() {
   return (
     <div className="flex h-dvh min-h-0 flex-col">
-      <div className="border-b border-slate-200 bg-white/90 px-4 py-3 dark:border-slate-800 dark:bg-slate-950/90">
+      <div className="border-b border-[var(--border)] bg-[var(--surface)]/90 px-4 py-3 backdrop-blur dark:border-slate-800">
         <div className="mx-auto h-6 max-w-[1600px] animate-pulse rounded bg-slate-200 dark:bg-slate-800" />
       </div>
       <div
-        className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 text-slate-500"
+        id="main-content"
+        className="flex min-h-0 flex-1 scroll-mt-16 flex-col items-center justify-center gap-3 text-slate-500"
         aria-live="polite"
         aria-busy="true"
       >

@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-wrath",
+  "type": "principle",
+  "name": "Wrath (ira) as capital vice",
+  "plainSummary": "In this list, wrath denotes unjust anger—desire for vengeance or cruelty out of proportion to a real or perceived wrong.",
+  "description": "Derived principle: ira (wrath or anger as vice) is the capital vice of disordered anger—resentment, rage, or cruelty that seeks harm beyond just defense or proportionate correction; classically distinguished from righteous anger at genuine injustice.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "violence-ethics"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Anger's moral status is debated everywhere; tradition's distinction between ordered and disordered anger remains useful but not universally accepted.",
+  "pros": [
+    {
+      "claim": "Tracks cycles of retaliation and dehumanization familiar in criminal and political life.",
+      "evidence": "Restorative justice and conflict theory both study how unchecked anger entrenches harm.",
+      "citations": ["st-ii-ii-q158", "anger-moral-psychology"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Anger is sometimes a fitting response to oppression; labeling it wrath can silence legitimate outrage.",
+      "evidence": "Liberation ethics and social movements debate when anger is prophetic versus destructive.",
+      "citations": ["wrath-and-justice-movements"]
+    }
+  ],
+  "citations": {
+    "st-ii-ii-q158": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 158 (anger)",
+      "type": "book",
+      "year": 1273
+    },
+    "anger-moral-psychology": {
+      "title": "Anger in moral psychology — survey",
+      "type": "journal-article",
+      "year": 2014
+    },
+    "wrath-and-justice-movements": {
+      "title": "Prophetic anger and social justice — ethical perspectives",
+      "type": "journal-article",
+      "year": 2021
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

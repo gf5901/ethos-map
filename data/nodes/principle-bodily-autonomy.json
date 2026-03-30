@@ -2,7 +2,7 @@
   "id": "principle-bodily-autonomy",
   "type": "principle",
   "name": "Bodily autonomy",
-  "description": "A derived principle that persons have substantial authority over what happens to their own bodies, including medical decisions.",
+  "description": "Derived principle: persons have substantial authority over what happens to their own bodies, including medical decisions.",
   "tags": ["autonomy", "medical-ethics"],
   "foundationStrength": 4,
   "foundationStrengthRationale": "Widely recognized in medical ethics and law, though boundaries remain contested at the edges.",

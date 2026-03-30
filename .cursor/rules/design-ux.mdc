@@ -1,0 +1,65 @@
+---
+description: Layout, spacing, responsive design, and UX copy/voice guidelines
+globs: src/**/*.{tsx,ts}
+alwaysApply: false
+---
+
+# Design & UX
+
+## Layout system
+
+- Use **CSS Grid** for page-level layout (sidebar + canvas + panel) and **Flexbox** for one-dimensional alignment within components.
+- Stick to Tailwind's **4 px spacing scale** (`gap-1` = 4 px, `gap-2` = 8 px, etc.). Avoid arbitrary pixel values unless aligning to an external spec.
+- Use **consistent padding progression**: page-level `px-4 sm:px-6 lg:px-8`, card-level `p-3` or `p-4`, tight UI `p-2`.
+- Prefer `gap-*` on flex/grid containers over individual margin on children — easier to maintain and reorder.
+
+## Spacing rhythm
+
+- **4 px base unit** — all spacing should be a multiple of 4 (4, 8, 12, 16, 24, 32, 48, 64).
+- Vertical spacing between sections: `space-y-6` or `space-y-8`. Between tightly related items: `space-y-2` or `space-y-3`.
+- Use `divide-y` for lists rather than manual border on each item.
+
+## Responsive design
+
+- **Mobile-first**: write base styles for the smallest viewport, layer up with `sm:`, `md:`, `lg:`, `xl:`.
+- Breakpoint targets: mobile (< 640 px), tablet (640–1023 px), desktop (≥ 1024 px).
+- The graph canvas is desktop-primary. On mobile, provide a **simplified list/tree view** with expandable nodes; canvas available but touch-optimized.
+- Side panels collapse to **bottom sheets or overlays** on mobile. Use `<dialog>` or equivalent for modal behavior.
+- Test at 320 px width (smallest supported phone) and 1920 px+ (common desktop).
+
+## Component patterns
+
+- **Cards**: `rounded-lg border bg-[var(--surface)] p-4` — consistent across node inspector, search results, axiom panels.
+- **Panels / sidebars**: full-height, scrollable, max-width constrained. Close button always keyboard-accessible.
+- **Empty states**: always provide a message and a suggested action — never a blank area.
+- **Loading states**: use skeleton placeholders that match the shape of the expected content. Avoid spinner-only for content areas.
+
+## Copy & voice
+
+EthosMap's voice is **clear, neutral, and respectful** — it describes arguments without taking sides.
+
+### Tone dimensions
+- **Formal but approachable** — academic rigor without jargon walls.
+- **Neutral** — descriptive, not prescriptive. "This axiom set holds that…" not "The truth is…"
+- **Concise** — say it in fewer words. Trim filler ("simply", "just", "please note that").
+- **Respectful** — every worldview gets the same editorial treatment.
+
+### Button labels & CTAs
+- Use **specific action verbs**: "Explore axiom set", "View dependencies", "Trace to roots" — not generic "Submit" or "Click here".
+- Destructive actions: explicit + confirmation — "Remove node" with "This can't be undone."
+- Toggle states: label reflects current state — "Collapse panel" (not "Toggle panel").
+
+### Error messages
+- Structure: **what happened → why → how to fix it**.
+- No blame ("Your input is invalid" → "This field needs a valid URL — include https://").
+- No jargon ("404" → "We couldn't find that node. It may have been renamed or removed.").
+
+### Labels & microcopy
+- Form labels: visible, persistent, above the field. Placeholders for format hints only ("e.g. bodily-autonomy").
+- Tooltips: short (< 15 words), for supplementary info only — never the only way to learn what a control does.
+- Node descriptions: written in third person, present tense. "Asserts that…" / "Derives from…" / "Enacted by…"
+
+### Scannability
+- Front-load keywords — the most important word comes first in labels, headings, and list items.
+- Use sentence case for headings and buttons. Reserve UPPERCASE for the `text-label` utility (badges, overlines).
+- Active voice: "Select an axiom set to filter the graph" not "The graph can be filtered by selecting an axiom set."

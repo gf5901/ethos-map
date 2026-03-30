@@ -2,7 +2,7 @@
   "id": "principle-us-equal-protection",
   "type": "principle",
   "name": "Equal protection of the laws",
-  "description": "States must not deny any person within their jurisdiction the equal protection of the laws—requiring that classifications among persons be justified by standards that vary with the context and the right at stake.",
+  "description": "The Equal Protection Clause bars states from denying any person within their jurisdiction the equal protection of the laws; classifications among persons require justification by standards that vary with the context and the right at stake.",
   "tags": ["us-law", "constitutional-law", "equality", "rights"],
   "foundationStrength": 5,
   "foundationStrengthRationale": "Core Fourteenth Amendment strand driving anti-discrimination and classification review.",
@@ -24,7 +24,7 @@
     {
       "id": "us-federal",
       "status": "enacted",
-      "citation": "U.S. Const. amend. XIV § 1"
+      "citation": "U.S. Const. amend. XIV, Section 1"
     }
   ],
   "citations": {

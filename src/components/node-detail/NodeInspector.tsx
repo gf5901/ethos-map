@@ -10,10 +10,13 @@ import {
 } from "react";
 import { NODE_TYPE_LABEL } from "@/lib/constants";
 import type { CompiledGraph, EthosNode } from "@/lib/types";
-import { FoundationGauge } from "./FoundationGauge";
-import { JurisdictionBadges } from "./JurisdictionBadges";
+import { FoundationStrengthBlock } from "./FoundationStrengthBlock";
+import { JurisdictionSection } from "./JurisdictionSection";
 import { NodeDescriptionBlock } from "./NodeDescriptionBlock";
 import { NodeGraphNavigation } from "./NodeGraphNavigation";
+import { NodeMetaDates } from "./NodeMetaDates";
+import { NodeReferences } from "./NodeReferences";
+import { NodeTags } from "./NodeTags";
 import { ProsConsSection } from "./ProsConsSection";
 
 function githubEditUrl(nodeId: string): string | null {
@@ -77,49 +80,38 @@ export function NodeInspector({
       <aside
         ref={panelRef}
         tabIndex={-1}
-        className="fixed inset-y-0 right-0 z-40 w-full max-w-md overflow-y-auto border-l border-slate-200 bg-white shadow-2xl outline-none dark:border-slate-800 dark:bg-slate-950"
+        className="fixed inset-y-0 right-0 z-40 w-full max-w-md overflow-y-auto border-l border-[var(--border)] bg-[var(--surface)] shadow-2xl outline-none focus:ring-2 focus:ring-sky-500 focus:ring-inset"
         role="dialog"
         aria-modal="true"
         aria-label="Node details"
       >
-        <div className="flex items-start justify-between gap-2 border-b border-slate-200 p-4 dark:border-slate-800">
+        <div className="flex items-start justify-between gap-2 border-b border-[var(--border)] p-4">
           <div>
-            <p className="text-label text-slate-500">{NODE_TYPE_LABEL[node.type]}</p>
+            <p className="text-label text-slate-500">
+              {NODE_TYPE_LABEL[node.type]}
+              {typeof node.year === "number" ? ` · ${node.year}` : ""}
+            </p>
             <h2 className="mt-1 text-lg font-semibold leading-snug text-slate-900 dark:text-slate-50">
               {node.name}
             </h2>
           </div>
           <button
             type="button"
-            className="rounded-md p-2 text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-900"
+            className="rounded-md p-2 text-slate-600 hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:text-slate-300 dark:hover:bg-slate-900"
             onClick={onClose}
-            aria-label="Close"
+            aria-label="Close node details"
           >
             <X className="size-5" aria-hidden />
           </button>
         </div>
 
-        <div className="space-y-4 p-4">
+        <div className="space-y-6 p-4">
           <NodeDescriptionBlock node={node} />
-
-          {typeof node.foundationStrength === "number" ? (
-            <FoundationGauge value={node.foundationStrength} />
-          ) : null}
-
-          {node.foundationStrengthRationale ? (
-            <p className="text-sm text-slate-600 dark:text-slate-400">
-              {node.foundationStrengthRationale}
-            </p>
-          ) : null}
-
-          <div>
-            <div className="text-label text-slate-500">Jurisdictions</div>
-            <div className="mt-1">
-              <JurisdictionBadges names={node.jurisdictionNames} />
-            </div>
-          </div>
-
+          <NodeTags tags={node.tags} />
+          <FoundationStrengthBlock node={node} />
+          <JurisdictionSection node={node} />
           <ProsConsSection node={node} />
+          <NodeReferences citations={node.citations} />
 
           {graph ? (
             <div>
@@ -136,7 +128,11 @@ export function NodeInspector({
             </div>
           ) : null}
 
-          <div className="flex flex-col gap-2 border-t border-slate-200 pt-4 dark:border-slate-800">
+          <div className="border-t border-[var(--border)] pt-4">
+            <NodeMetaDates createdAt={node.createdAt} updatedAt={node.updatedAt} />
+          </div>
+
+          <div className="flex flex-col gap-2 border-t border-[var(--border)] pt-4">
             <Link
               className="inline-flex items-center gap-1.5 text-sm font-medium text-sky-600 hover:underline dark:text-sky-400"
               href={`/node/${node.id}`}

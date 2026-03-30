@@ -12,6 +12,12 @@ import {
 } from "@/lib/graph";
 import type { CompiledGraph } from "@/lib/types";
 
+const MAP_ACTION_BTN =
+  "inline-flex min-h-9 items-center gap-1.5 rounded-md border border-slate-300 bg-[var(--surface)] px-2 py-1.5 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 disabled:pointer-events-none disabled:opacity-50 dark:border-slate-600 dark:text-slate-100 dark:hover:bg-slate-800";
+
+const NAV_LINK =
+  "rounded-sm text-sky-600 outline-none hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:text-sky-400";
+
 function nameById(graph: CompiledGraph): Map<string, string> {
   return new Map(graph.nodes.map((n) => [n.id, n.data.name]));
 }
@@ -37,10 +43,7 @@ function NavList({
         if (navigateMode === "page") {
           return (
             <li key={id}>
-              <Link
-                className="text-sky-600 hover:underline dark:text-sky-400"
-                href={`/node/${id}`}
-              >
+              <Link className={NAV_LINK} href={`/node/${id}`}>
                 {label}
               </Link>
               <span className="ml-2 text-xs text-slate-400">{id}</span>
@@ -51,7 +54,7 @@ function NavList({
           <li key={id}>
             <button
               type="button"
-              className="text-left text-sky-600 hover:underline dark:text-sky-400"
+              className={`text-left ${NAV_LINK}`}
               onClick={() => onNavigateToNode?.(id)}
             >
               {label}
@@ -99,7 +102,7 @@ export function NodeGraphNavigation({
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2 py-1 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+            className={MAP_ACTION_BTN}
             onClick={() => onHighlightNodes([...ancestorSet])}
           >
             <ArrowUpToLine className="size-3.5 shrink-0" aria-hidden />
@@ -107,7 +110,7 @@ export function NodeGraphNavigation({
           </button>
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2 py-1 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+            className={MAP_ACTION_BTN}
             onClick={() => onHighlightNodes([...descendantSet])}
           >
             <ArrowDownToLine className="size-3.5 shrink-0" aria-hidden />
@@ -115,7 +118,7 @@ export function NodeGraphNavigation({
           </button>
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2 py-1 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+            className={MAP_ACTION_BTN}
             onClick={() => onHighlightNodes(siblingIds)}
             disabled={!siblingIds.length}
             title={
@@ -129,7 +132,7 @@ export function NodeGraphNavigation({
           </button>
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-md border border-slate-300 bg-white px-2 py-1 text-xs font-medium text-slate-800 shadow-sm hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+            className={MAP_ACTION_BTN}
             onClick={() => onHighlightNodes(null)}
           >
             <XCircle className="size-3.5 shrink-0" aria-hidden />

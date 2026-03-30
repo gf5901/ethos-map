@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-gluttony",
+  "type": "principle",
+  "name": "Gluttony (gula) as capital vice",
+  "plainSummary": "In this tradition, gluttony is not only eating too much: it is inordinate desire in the realm of food and drink—quantity, delicacy, or ritual that disorders health, sobriety, or solidarity.",
+  "description": "Derived principle: gula (gluttony) is the capital vice of intemperance in eating and drinking—classically including excessive concern for costly or refined fare, not merely caloric excess.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "temperance"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Temperance language remains intelligible in public health; gourmet culture and eating disorders complicate simple labeling.",
+  "pros": [
+    {
+      "claim": "Connects individual appetite to stewardship of health and shared meals as moral practice.",
+      "evidence": "Public health ethics and environmental food ethics echo concerns about excess and waste.",
+      "citations": ["st-ii-ii-q148", "food-ethics-public-health"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Risk of stigmatizing body size or poverty when the term gluttony is used loosely.",
+      "evidence": "Critics note that metabolic, economic, and psychological factors challenge one-size moral judgments about eating.",
+      "citations": ["gluttony-stigma-critique"]
+    }
+  ],
+  "citations": {
+    "st-ii-ii-q148": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 148 (gluttony)",
+      "type": "book",
+      "year": 1273
+    },
+    "food-ethics-public-health": {
+      "title": "Food, temperance, and public health ethics — overview",
+      "type": "journal-article",
+      "year": 2019
+    },
+    "gluttony-stigma-critique": {
+      "title": "Moral language, weight stigma, and eating behavior — critical discussion",
+      "type": "journal-article",
+      "year": 2017
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

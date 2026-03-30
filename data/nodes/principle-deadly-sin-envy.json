@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-envy",
+  "type": "principle",
+  "name": "Envy (invidia) as capital vice",
+  "plainSummary": "In this tradition, envy is sorrow or resentment at another's good—wishing to lower them or possess what is theirs in a disordered way.",
+  "description": "Derived principle: invidia (envy) is the capital vice of sadness at another's excellence or happiness, distinct from righteous indignation at injustice; it tends toward detraction, schadenfreude, and hostility.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "moral-psychology"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Clear parallel with envy as analyzed in philosophy and psychology; theological packaging adds metaphysical claims not all accept.",
+  "pros": [
+    {
+      "claim": "Captures a stable psychological pattern—resentment of comparative status—that corrodes communities.",
+      "evidence": "Social science and virtue ethics both study status competition and envy-driven behavior.",
+      "citations": ["st-ii-ii-q36", "envy-psychology-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Can blur into legitimate desire for fairness or anger at undeserved privilege.",
+      "evidence": "Distinguishing envy from warranted protest against inequality requires careful moral analysis.",
+      "citations": ["envy-vs-justice-note"]
+    }
+  ],
+  "citations": {
+    "st-ii-ii-q36": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 36 (envy)",
+      "type": "book",
+      "year": 1273
+    },
+    "envy-psychology-overview": {
+      "title": "Envy and social comparison — psychological overview",
+      "type": "journal-article",
+      "year": 2012
+    },
+    "envy-vs-justice-note": {
+      "title": "Envy, resentment, and egalitarian justice — conceptual distinctions",
+      "type": "journal-article",
+      "year": 2016
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

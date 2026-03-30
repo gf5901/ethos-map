@@ -1,0 +1,43 @@
+{
+  "id": "principle-deadly-sin-pride",
+  "type": "principle",
+  "name": "Pride (superbia) as capital vice",
+  "plainSummary": "In the classic list, pride is the disordered elevation of self—elevating the self above God, truth, or the good of others.",
+  "description": "Derived principle from Christian moral tradition: pride (superbia) is a root distortion of self-love—excessive esteem for oneself, contempt for dependence on God or others—often treated as ordering or amplifying other vices.",
+  "tags": ["christianity", "deadly-sins", "capital-vices", "moral-theology"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Stable as a category within centuries of Christian theology and spiritual literature; secular or interfaith readers may reject the metaphysical framing while recognizing hubris as a moral phenomenon.",
+  "pros": [
+    {
+      "claim": "Names a recurring moral failure—hubris—that appears across cultures and institutions.",
+      "evidence": "Philosophy and literature independently criticize arrogance, self-deception, and contempt for limits; the tradition gives these a structured place.",
+      "citations": ["ccc-1866", "st-ii-ii-q162"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Can be misread to condemn healthy self-respect or legitimate ambition.",
+      "evidence": "Pastoral and feminist critiques warn that pride language has sometimes been used to suppress dignity and assertiveness among the oppressed.",
+      "citations": ["pastoral-caution-pride"]
+    }
+  ],
+  "citations": {
+    "ccc-1866": {
+      "title": "Catechism of the Catholic Church — on vices and sins (paragraph 1866)",
+      "type": "book",
+      "year": 1997
+    },
+    "st-ii-ii-q162": {
+      "title": "Thomas Aquinas, Summa Theologiae II-II, q. 162 (pride)",
+      "type": "book",
+      "year": 1273
+    },
+    "pastoral-caution-pride": {
+      "title": "Pastoral and ethical literature on dignity vs. disordered pride (overview)",
+      "type": "journal-article",
+      "year": 2015
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

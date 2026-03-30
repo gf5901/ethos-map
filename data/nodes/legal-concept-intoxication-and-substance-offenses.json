@@ -1,0 +1,37 @@
+{
+  "id": "legal-concept-intoxication-and-substance-offenses",
+  "type": "legal-concept",
+  "name": "Intoxication and substance-related offenses",
+  "description": "Legal constructs addressing public drunkenness, driving under the influence, and controlled-substance rules—an imperfect but recurring legal analogue to moral warnings about intemperance and disordered appetite (including gluttony in its broader classical sense).",
+  "tags": ["criminal-law", "substance-regulation", "deadly-sins-bridge", "christianity"],
+  "foundationStrength": 3,
+  "foundationStrengthRationale": "Policy shifts between prohibition, harm reduction, and medical models complicate any simple moral mapping.",
+  "pros": [
+    {
+      "claim": "Targets acute public-safety risks from impaired judgment and coordination.",
+      "evidence": "DUI/DWI regimes and public-intoxication laws are widespread responses to measurable harms.",
+      "citations": ["dui-public-safety-rationale"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Gluttony as a spiritual vice is a poor fit for addiction science and socioeconomic drivers of substance use.",
+      "evidence": "Public-health literature distinguishes disease, dependence, and moral fault in ways classical vice lists did not.",
+      "citations": ["addiction-vs-vice-framing"]
+    }
+  ],
+  "citations": {
+    "dui-public-safety-rationale": {
+      "title": "Impaired driving law — public safety rationale and evaluation",
+      "type": "government-report",
+      "year": 2019
+    },
+    "addiction-vs-vice-framing": {
+      "title": "Addiction, responsibility, and criminal law — framing debates",
+      "type": "journal-article",
+      "year": 2018
+    }
+  },
+  "createdAt": "2026-03-30",
+  "updatedAt": "2026-03-30"
+}

@@ -2,11 +2,11 @@
   "id": "axiom-aequitas",
   "type": "axiom",
   "name": "Fairness can soften unfair rules",
-  "plainSummary": "Sometimes applying a rule word-for-word produces an unfair outcome. Judges and lawmakers should be able to soften rigid rules so real cases line up better with what people mean by justice.",
+  "plainSummary": "Sometimes applying a rule word-for-word produces an unfair outcome. Many frameworks hold that judges and lawmakers may soften rigid rules so concrete cases align better with justice.",
   "whyRoot": "Rules are written in advance for typical cases; life produces outliers. Without a safety valve for proportion and fairness, law becomes mechanical cruelty. Equity is a root because justice is not the same as a checklist.",
   "description": "Foundational claim drawn from Roman jurisprudence that aequitas—fairness and proportion—guides judges and lawmakers in tempering rigid rules so outcomes align with justice in concrete cases.",
   "tags": ["foundational", "roman-law", "justice", "civil-law"],
   "citations": {},
   "createdAt": "2026-03-29",
-  "updatedAt": "2026-03-29"
+  "updatedAt": "2026-03-30"
 }

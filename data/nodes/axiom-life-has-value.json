@@ -1,12 +1,12 @@
 {
   "id": "axiom-life-has-value",
   "type": "axiom",
-  "name": "Human life matters on its own",
+  "name": "Human life as intrinsically significant",
   "plainSummary": "Human life matters for its own sake—not only because it is useful. Many arguments about ethics and medicine start from this idea.",
   "whyRoot": "If life only mattered when it was convenient or productive, people could be discarded whenever costs rose. Treating human life as carrying weight on its own is a stopping point for a huge swath of medical and legal reasoning: it says persons are not mere instruments.",
   "description": "Foundational claim that human life is valuable in itself, often used as a root for autonomy and medical ethics arguments within many frameworks.",
   "tags": ["foundational", "medical-ethics"],
   "citations": {},
   "createdAt": "2026-03-29",
-  "updatedAt": "2026-03-29"
+  "updatedAt": "2026-03-30"
 }

@@ -3,11 +3,15 @@ import path from "node:path";
 import { ExternalLink, Home } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { NodePageTopBar } from "@/components/layout/NodePageTopBar";
-import { FoundationGauge } from "@/components/node-detail/FoundationGauge";
-import { JurisdictionBadges } from "@/components/node-detail/JurisdictionBadges";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { Header } from "@/components/layout/Header";
+import { FoundationStrengthBlock } from "@/components/node-detail/FoundationStrengthBlock";
+import { JurisdictionSection } from "@/components/node-detail/JurisdictionSection";
 import { NodeDescriptionBlock } from "@/components/node-detail/NodeDescriptionBlock";
 import { NodeGraphNavigationLoader } from "@/components/node-detail/NodeGraphNavigationLoader";
+import { NodeMetaDates } from "@/components/node-detail/NodeMetaDates";
+import { NodeReferences } from "@/components/node-detail/NodeReferences";
+import { NodeTags } from "@/components/node-detail/NodeTags";
 import { ProsConsSection } from "@/components/node-detail/ProsConsSection";
 import { NODE_TYPE_LABEL } from "@/lib/constants";
 import type { EthosNode } from "@/lib/types";
@@ -84,13 +88,16 @@ export default async function NodePage({ params }: PageProps) {
   } catch {
     return (
       <div className="min-h-screen">
-        <NodePageTopBar />
-        <div className="mx-auto max-w-xl p-8">
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+        <Header variant="node" />
+        <div className="mx-auto max-w-xl scroll-mt-16 p-8" id="main-content">
+          <h1 className="text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
             Not found
           </h1>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+            We couldn&apos;t find that node. It may have been renamed or removed.
+          </p>
           <Link
-            className="mt-4 inline-flex items-center gap-2 text-sky-600 hover:underline"
+            className="mt-4 inline-flex items-center gap-2 text-sky-600 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500"
             href="/"
           >
             <Home className="size-4 shrink-0" aria-hidden />
@@ -108,33 +115,34 @@ export default async function NodePage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen">
-      <NodePageTopBar />
-      <div className="mx-auto max-w-3xl px-4 py-10">
+      <Header variant="node" />
+      <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8">
         <JsonLd node={node} />
-        <header className="border-b border-slate-200 pb-4 dark:border-slate-800">
-          <p className="text-label text-slate-500">{NODE_TYPE_LABEL[node.type]}</p>
+        <Breadcrumbs nodeName={node.name} nodeType={node.type} />
+        <header className="border-b border-[var(--border)] pb-4">
+          <p className="text-label text-slate-500">
+            {NODE_TYPE_LABEL[node.type]}
+            {typeof node.year === "number" ? ` · ${node.year}` : ""}
+          </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
             {node.name}
           </h1>
         </header>
-        <article className="mt-6 max-w-readable">
+        <main
+          id="main-content"
+          className="mt-6 flex max-w-readable flex-col gap-8 scroll-mt-16"
+        >
           <NodeDescriptionBlock
             node={node}
             leadClassName="text-base leading-relaxed text-slate-700 dark:text-slate-300"
             detailClassName="text-base leading-relaxed text-slate-600 dark:text-slate-400"
           />
-          {typeof node.foundationStrength === "number" ? (
-            <div className="mt-6 max-w-sm">
-              <FoundationGauge value={node.foundationStrength} />
-            </div>
-          ) : null}
-          <div className="mt-4">
-            <JurisdictionBadges names={node.jurisdictionNames} />
-          </div>
-          <div className="mt-8">
-            <ProsConsSection node={node} />
-          </div>
-          <section className="mt-10 border-t border-slate-200 pt-8 dark:border-slate-800">
+          <NodeTags tags={node.tags} />
+          <FoundationStrengthBlock node={node} />
+          <JurisdictionSection node={node} />
+          <ProsConsSection node={node} />
+          <NodeReferences citations={node.citations} />
+          <section>
             <h2 className="text-lg font-semibold leading-snug text-slate-900 dark:text-slate-50">
               Explore connections
             </h2>
@@ -146,8 +154,11 @@ export default async function NodePage({ params }: PageProps) {
               <NodeGraphNavigationLoader nodeId={node.id} />
             </div>
           </section>
-        </article>
-        <div className="mt-10 border-t border-slate-200 pt-6 dark:border-slate-800">
+          <div className="border-t border-[var(--border)] pt-6">
+            <NodeMetaDates createdAt={node.createdAt} updatedAt={node.updatedAt} />
+          </div>
+        </main>
+        <div className="mt-10 border-t border-[var(--border)] pt-6">
           {editUrl ? (
             <a
               className="inline-flex items-center gap-1.5 text-sky-600 hover:underline"
