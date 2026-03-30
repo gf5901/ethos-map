@@ -1,0 +1,45 @@
+{
+  "id": "principle-us-judicial-review",
+  "type": "principle",
+  "name": "Judicial review",
+  "description": "Courts may assess whether statutes and executive actions comply with the Constitution and refuse to enforce those that do not—tying the written constitution to ordinary adjudication.",
+  "tags": ["us-law", "constitutional-law", "courts"],
+  "foundationStrength": 5,
+  "foundationStrengthRationale": "Long treated as settled in federal practice since early 19th-century precedent, though its scope and legitimacy remain debated in theory.",
+  "pros": [
+    {
+      "claim": "Gives bite to constitutional limits that might otherwise be ignored by political majorities.",
+      "evidence": "Invalidation of unconstitutional enactments is a routine part of federal and state court practice.",
+      "citations": ["marbury-judicial-review"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Places major policy outcomes in the hands of unelected judges, raising democratic legitimacy and restraint debates.",
+      "evidence": "Scholarly and popular controversy over countermajoritarian difficulty and interpretive methodology.",
+      "citations": ["countermajoritarian-debate"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "Marbury v. Madison, 5 U.S. (1 Cranch) 137 (1803)"
+    }
+  ],
+  "citations": {
+    "marbury-judicial-review": {
+      "title": "Marbury v. Madison",
+      "type": "case-law",
+      "year": 1803,
+      "url": "https://supreme.justia.com/cases/federal/us/5/137/"
+    },
+    "countermajoritarian-debate": {
+      "title": "Judicial review and democratic theory — introductory note",
+      "type": "journal-article",
+      "year": 2018
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

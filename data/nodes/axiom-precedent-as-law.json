@@ -1,0 +1,12 @@
+{
+  "id": "axiom-precedent-as-law",
+  "type": "axiom",
+  "name": "Courts should follow their past decisions",
+  "plainSummary": "What courts decided before should usually bind or strongly guide what they decide next, so the law stays predictable—unless there is a compelling reason to change course.",
+  "whyRoot": "Legal disputes are supposed to be settled by rules people could have seen coming. If every case started from scratch, law would be arbitrary and investment in cooperation would shrink. Precedent is a root commitment to stability and notice.",
+  "description": "Foundational commitment that adjudication should be stable and predictable by treating prior court decisions as authoritative or highly persuasive absent compelling reason to depart—core to the Anglo-American common law tradition.",
+  "tags": ["foundational", "us-law", "common-law", "adjudication"],
+  "citations": {},
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

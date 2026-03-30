@@ -1,0 +1,38 @@
+{
+  "id": "principle-bona-fides",
+  "type": "principle",
+  "name": "Good faith (bona fides) in private law",
+  "plainSummary": "Roman private law ties these ideas together: be honest, deal fairly, and keep faith with your agreements—so obligations and interpretation are guided by bona fides, not bare formalism alone.",
+  "description": "Synthesis principle from classical Roman jurisprudence: obligations, interpretation, and conduct in private law should be guided by bona fides—honesty, fair dealing, and loyalty to the bargain—rather than compliance with the letter alone.",
+  "tags": ["roman-law", "contracts", "civil-law", "synthesis"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Central to civilian systems and influential elsewhere; exact scope and institutional form vary by jurisdiction.",
+  "pros": [
+    {
+      "claim": "Aligns contract and property law with lived expectations of trust and cooperation.",
+      "evidence": "Good-faith standards appear across modern civil codes and influence common-law doctrines such as implied duties and unconscionability.",
+      "citations": ["bona-fides-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Open-ended good-faith language can create uncertainty about duties and liability.",
+      "evidence": "Debates over certainty vs. flexibility recur wherever courts imply obligations beyond express terms.",
+      "citations": ["good-faith-uncertainty-note"]
+    }
+  ],
+  "citations": {
+    "bona-fides-overview": {
+      "title": "Good faith in contract law (overview)",
+      "type": "other",
+      "year": 2020
+    },
+    "good-faith-uncertainty-note": {
+      "title": "Indeterminacy and good-faith standards — introductory note",
+      "type": "other",
+      "year": 2019
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-30"
+}

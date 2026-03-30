@@ -1,0 +1,75 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.9/schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!!**/.next",
+      "!!**/out",
+      "!!**/playwright-report",
+      "!!**/test-results",
+      "!!public/data"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 90,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": true
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "a11y": {
+        "useSemanticElements": "off",
+        "useAriaPropsSupportedByRole": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  },
+  "html": {
+    "formatter": {
+      "indentScriptAndStyle": false,
+      "selfCloseVoidElements": "always"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": { "source": { "organizeImports": "on" } }
+  }
+}

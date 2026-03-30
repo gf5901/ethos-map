@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-common-law-tradition",
+  "type": "principle",
+  "name": "Common law method",
+  "description": "Much of U.S. law (especially in contracts, torts, property, and procedure) develops through judicial decisions that articulate, distinguish, and incrementally reshape rules—alongside statutes and constitutions.",
+  "tags": ["us-law", "common-law", "legal-method"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Descriptive of large swaths of state and federal practice, though modern codes and regulations narrow its domain in many fields.",
+  "pros": [
+    {
+      "claim": "Allows law to adapt flexibly to new facts and evolving norms without waiting for comprehensive legislation.",
+      "evidence": "Judge-made doctrines continue to govern many private-law disputes and procedural details.",
+      "citations": ["common-law-flexibility"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Can obscure clear rules, increase litigation costs, and yield uneven development across jurisdictions.",
+      "evidence": "Forum variation and complex multi-factor tests are common criticisms in tort and contract doctrine.",
+      "citations": ["common-law-complexity-critique"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "no-data",
+      "citation": "Mixed state and federal court development; no single enactment date"
+    }
+  ],
+  "citations": {
+    "common-law-flexibility": {
+      "title": "Common law reasoning — incremental change",
+      "type": "book",
+      "year": 2015
+    },
+    "common-law-complexity-critique": {
+      "title": "Complexity and variation in common law doctrines — introductory note",
+      "type": "other",
+      "year": 2018
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

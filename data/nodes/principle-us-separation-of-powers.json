@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-separation-of-powers",
+  "type": "principle",
+  "name": "Separation of powers",
+  "description": "Legislative, executive, and judicial functions are assigned to distinct branches at the federal level, with checks and balances intended to prevent concentrated power and arbitrary rule.",
+  "tags": ["us-law", "constitutional-law", "governance"],
+  "foundationStrength": 5,
+  "foundationStrengthRationale": "Explicit in Articles I–III; treated as a core structural principle in U.S. constitutional doctrine.",
+  "pros": [
+    {
+      "claim": "Reduces the risk that a single actor can make, enforce, and interpret law without accountability from other branches.",
+      "evidence": "Institutional design allocates distinct core functions and inter-branch checks.",
+      "citations": ["articles-i-iii-structure"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Can slow decision-making and invite branch conflict, gridlock, or emergency-power stretching of formal lines.",
+      "evidence": "Recurring debates over war powers, appointments, and enforcement discretion illustrate friction.",
+      "citations": ["separation-friction-note"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "U.S. Const. arts. I–III"
+    }
+  ],
+  "citations": {
+    "articles-i-iii-structure": {
+      "title": "U.S. Constitution, Articles I–III (legislative, executive, judicial branches)",
+      "type": "statute",
+      "year": 1789
+    },
+    "separation-friction-note": {
+      "title": "Separation of powers and inter-branch conflict — introductory note",
+      "type": "other",
+      "year": 2021
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

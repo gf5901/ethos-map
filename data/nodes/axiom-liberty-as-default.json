@@ -1,0 +1,12 @@
+{
+  "id": "axiom-liberty-as-default",
+  "type": "axiom",
+  "name": "Freedom first; limits need a good reason",
+  "plainSummary": "People should generally be free to choose for themselves. If you limit someone’s freedom, you owe a real reason—like preventing harm—not just habit or preference.",
+  "whyRoot": "Liberty is costly to restrict and easy to abuse: every constraint needs a public justification. This root flips the burden—freedom is presumed, interference is what must earn its keep—so power cannot treat restriction as the default mood of government.",
+  "description": "Foundational liberal or libertarian commitment that interference with voluntary choice requires a positive justification (harm prevention, consent of the governed, etc.), rather than the reverse.",
+  "tags": ["foundational", "liberty", "governance"],
+  "citations": {},
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

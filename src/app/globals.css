@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Typography: system-first stack (dashboard-style UIs often use native fonts for speed and clarity). */
+@theme {
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  /* Comfortable measure for long-form content (~65ch); use max-w-readable in prose blocks. */
+  --width-readable: 65ch;
+}
+
+@utility max-w-readable {
+  max-width: var(--width-readable);
+}
+
+/* Overlines, field labels, section kicker text — use with a muted text color class. */
+@utility text-label {
+  font-size: var(--text-xs);
+  line-height: var(--text-xs--line-height);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+
+:root {
+  --background: #fafafa;
+  --foreground: #0a0a0a;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}

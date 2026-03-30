@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethosmap.org/schema/axiom-set.schema.json",
+  "title": "EthosMap Axiom Set",
+  "type": "object",
+  "required": ["id", "name", "description", "axiomIds", "color", "icon"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "axiomIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+    "icon": { "type": "string", "minLength": 1 }
+  }
+}

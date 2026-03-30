@@ -1,0 +1,13 @@
+{
+  "id": "american-law-foundations",
+  "name": "American law foundations",
+  "description": "Written constitutional structure, common-law precedent, liberty-based due process and rule-of-law expectations, and equal moral consideration as reflected in equal protection—useful roots for navigating U.S. legal principles in EthosMap.",
+  "axiomIds": [
+    "axiom-written-constitution-as-supreme-law",
+    "axiom-precedent-as-law",
+    "axiom-liberty-as-default",
+    "axiom-equal-moral-consideration"
+  ],
+  "color": "#1E3A5F",
+  "icon": "scale"
+}

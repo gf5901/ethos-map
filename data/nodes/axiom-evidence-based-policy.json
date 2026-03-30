@@ -1,0 +1,12 @@
+{
+  "id": "axiom-evidence-based-policy",
+  "type": "axiom",
+  "name": "When a lot is at stake, follow the evidence",
+  "plainSummary": "When laws or rules seriously affect health, safety, or freedom, they should follow the best available evidence and expert consensus when that exists.",
+  "whyRoot": "When mistakes are costly and reversible only with difficulty, guessing is a poor basis for coercion. Anchoring high-stakes rules to our best shared picture of facts is a root commitment: it reduces arbitrary harm and makes public justification possible.",
+  "description": "Foundational commitment that when laws or regulations materially affect health, safety, or liberty, they should align with credible empirical and expert consensus where such evidence exists.",
+  "tags": ["foundational", "governance", "science"],
+  "citations": {},
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

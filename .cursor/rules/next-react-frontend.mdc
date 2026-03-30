@@ -1,0 +1,23 @@
+---
+description: Next.js App Router, React 19, and client/server boundaries for this repo
+globs: src/**/*.{tsx,ts}
+alwaysApply: false
+---
+
+# Next.js & React (frontend)
+
+- **Default to Server Components** in `app/`. Add `"use client"` only when the file needs browser APIs, event handlers, or client-only libraries (e.g. `@xyflow/react`, Zustand hooks).
+- **Colocate** UI next to routes or under `components/` by feature. Prefer **named exports** for leaf components if the file already uses that style; stay consistent within a folder.
+- **Imports**: use the `@/` alias (`@/components/...`, `@/lib/...`, `@/hooks/...`, `@/store/...`). Avoid deep relative chains like `../../../`.
+- **State**: use **Zustand** in `store/` for cross-route UI state; keep local state in `useState` / `useReducer` when it does not need to be global.
+- **Types**: explicit props types for components; reuse types from `@/lib/types` for graph/domain data.
+- **Effects**: prefer deriving state with `useMemo` / passing props over `useEffect` for data that can be computed during render. Use `useEffect` for subscriptions, DOM sync, and one-time client setup.
+- **Performance**: memoize expensive lists or flow node maps when profiling shows churn; avoid premature `useMemo`/`memo` everywhere.
+- **Biome** owns formatting and many lint rules—run `npm run lint` after substantive edits; do not disable rules without a short comment and a good reason.
+
+```tsx
+// Client boundary only where needed
+"use client";
+
+import { useAppStore } from "@/store/appStore";
+```

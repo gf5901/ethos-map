@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-stare-decisis",
+  "type": "principle",
+  "name": "Stare decisis (respect for precedent)",
+  "description": "Courts generally follow prior decisions on the same legal question to promote stability, reliance, and equal treatment—while allowing rare departures when precedent is unworkable or egregiously wrong.",
+  "tags": ["us-law", "common-law", "courts", "precedent"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Strong norm in appellate practice, though the Supreme Court has articulated exceptions and occasionally overturns landmark precedents.",
+  "pros": [
+    {
+      "claim": "Supports predictability for individuals, institutions, and markets that order conduct around prior holdings.",
+      "evidence": "Routine lower-court adherence to controlling precedent is expected absent distinguishing facts.",
+      "citations": ["stare-decisis-rationale"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Can entrench mistaken or morally outdated decisions until a court is willing to bear the costs of reversal.",
+      "evidence": "High-profile overrulings illustrate tension between stability and correction.",
+      "citations": ["precedent-overruling-tension"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "See e.g. Planned Parenthood of Se. Pa. v. Casey, 505 U.S. 833 (1992) (stare decisis factors)"
+    }
+  ],
+  "citations": {
+    "stare-decisis-rationale": {
+      "title": "Stare decisis — institutional reliance and stability",
+      "type": "case-law",
+      "year": 1992
+    },
+    "precedent-overruling-tension": {
+      "title": "Overruling precedent — costs and benefits",
+      "type": "journal-article",
+      "year": 2020
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

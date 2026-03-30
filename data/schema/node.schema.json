@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethosmap.org/schema/node.schema.json",
+  "title": "EthosMap Node",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "description",
+    "tags",
+    "citations",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "type": {
+      "type": "string",
+      "enum": ["axiom", "principle", "legal-concept", "statute", "proposed-law"]
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "plainSummary": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Plain-language summary; when present, shown above the technical description."
+    },
+    "whyRoot": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Why this node is positioned as a root or why it matters for first-principles reasoning; optional plain-language motivation."
+    },
+    "description": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "foundationStrength": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "foundationStrengthRationale": { "type": "string" },
+    "pros": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/argument" }
+    },
+    "cons": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/argument" }
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/jurisdictionRef" }
+    },
+    "citations": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/citation" }
+    },
+    "createdAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "argument": {
+      "type": "object",
+      "required": ["claim", "evidence", "citations"],
+      "additionalProperties": false,
+      "properties": {
+        "claim": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "string", "minLength": 1 },
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "jurisdictionRef": {
+      "type": "object",
+      "required": ["id", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["enacted", "proposed", "rejected", "repealed", "no-data"]
+        },
+        "date": { "type": "string", "format": "date" },
+        "citation": { "type": "string" }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": ["title", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "case-law",
+            "statute",
+            "government-report",
+            "government-data",
+            "journal-article",
+            "book",
+            "other"
+          ]
+        },
+        "year": { "type": "integer" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

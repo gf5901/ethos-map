@@ -1,0 +1,8 @@
+{
+  "id": "us-federal",
+  "name": "United States (Federal)",
+  "type": "nation-state",
+  "iso": "US",
+  "flagEmoji": "🇺🇸",
+  "parent": null
+}

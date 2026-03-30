@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethosmap.org/schema/jurisdiction.schema.json",
+  "title": "EthosMap Jurisdiction",
+  "type": "object",
+  "required": ["id", "name", "type"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "enum": [
+        "nation-state",
+        "sub-national",
+        "supranational",
+        "network-state",
+        "historical"
+      ]
+    },
+    "iso": { "type": "string" },
+    "flagEmoji": { "type": "string" },
+    "parent": { "type": ["string", "null"] }
+  }
+}

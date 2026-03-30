@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-federalism",
+  "type": "principle",
+  "name": "Federalism (division of sovereign authority)",
+  "description": "Sovereignty is split between a national government and the states: each has distinct lawmaking and enforcement domains, with federal law supreme only within enumerated federal powers.",
+  "tags": ["us-law", "constitutional-law", "federalism"],
+  "foundationStrength": 5,
+  "foundationStrengthRationale": "Structurally embedded in the Constitution’s enumeration of powers and the Tenth Amendment’s reservation to the states.",
+  "pros": [
+    {
+      "claim": "Allows policy experimentation and local responsiveness while preserving a unified national sphere for certain matters.",
+      "evidence": "Historical variation among state laws alongside nationwide regimes in areas of federal competence.",
+      "citations": ["tenth-amendment-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Produces overlapping regulation, forum-shopping, and recurring uncertainty about the scope of federal versus state authority.",
+      "evidence": "Long-running litigation over Commerce Clause and preemption illustrates boundary disputes.",
+      "citations": ["federalism-boundary-tension"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "U.S. Const. amends. X; structural provisions art. I–III"
+    }
+  ],
+  "citations": {
+    "tenth-amendment-overview": {
+      "title": "Tenth Amendment — powers reserved to the states",
+      "type": "statute",
+      "year": 1791
+    },
+    "federalism-boundary-tension": {
+      "title": "Federalism and overlapping jurisdiction — introductory note",
+      "type": "other",
+      "year": 2019
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

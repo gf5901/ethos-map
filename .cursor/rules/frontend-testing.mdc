@@ -1,0 +1,13 @@
+---
+description: Unit and E2E testing patterns for frontend code
+globs: src/**/*.test.{ts,tsx},e2e/**/*.ts
+alwaysApply: false
+---
+
+# Frontend testing
+
+- **Unit / integration**: **Vitest** + **@testing-library/react** for components and `src/lib` logic. Prefer testing behavior and accessible output over implementation details.
+- **Queries**: use `getByRole`, `getByLabelText`, etc. per Testing Library priority. Avoid brittle selectors tied to CSS class names unless there is no better option.
+- **E2E**: **Playwright** in `e2e/`. Use stable selectors (`getByRole`, `getByTestId` only when necessary). Keep flows readable and avoid arbitrary `waitForTimeout`—prefer Playwright auto-waiting and explicit expectations.
+- **Data**: graph and node data are validated at build; tests should use **fixtures or minimal compiled snapshots**, not unvalidated arbitrary JSON, when touching graph behavior.
+- After UI changes, run `npm run test` and, when flows are affected, `npm run test:e2e`.

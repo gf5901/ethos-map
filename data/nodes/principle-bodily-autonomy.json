@@ -1,0 +1,37 @@
+{
+  "id": "principle-bodily-autonomy",
+  "type": "principle",
+  "name": "Bodily autonomy",
+  "description": "A derived principle that persons have substantial authority over what happens to their own bodies, including medical decisions.",
+  "tags": ["autonomy", "medical-ethics"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Widely recognized in medical ethics and law, though boundaries remain contested at the edges.",
+  "pros": [
+    {
+      "claim": "Aligns with widely accepted informed consent frameworks in clinical practice.",
+      "evidence": "Informed consent is a standard requirement across modern healthcare systems.",
+      "citations": ["informed-consent-overview"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "May conflict with public health measures that require mandatory interventions.",
+      "evidence": "Vaccination mandates and quarantine powers illustrate recurring tension between autonomy and collective welfare.",
+      "citations": ["public-health-tension-note"]
+    }
+  ],
+  "citations": {
+    "informed-consent-overview": {
+      "title": "Informed consent (overview)",
+      "type": "other",
+      "year": 2020
+    },
+    "public-health-tension-note": {
+      "title": "Public health vs. individual autonomy — introductory note",
+      "type": "other",
+      "year": 2019
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

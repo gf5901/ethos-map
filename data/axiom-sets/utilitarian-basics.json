@@ -1,0 +1,8 @@
+{
+  "id": "utilitarian-basics",
+  "name": "Utilitarian (welfare)",
+  "description": "Moral weight on reducing suffering and promoting aggregate well-being; a common starting point for policy cost–benefit reasoning.",
+  "axiomIds": ["axiom-minimize-suffering"],
+  "color": "#7C3AED",
+  "icon": "scale"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "ethos-map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "validate": "tsx scripts/validate-data.ts",
+    "compile-graph": "tsx scripts/compile-graph.ts",
+    "prebuild": "npm run validate && npm run compile-graph",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.10.2",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "dagre": "^0.8.5",
+    "fuse.js": "^7.1.0",
+    "lucide-react": "^1.7.0",
+    "next": "^16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.9",
+    "@playwright/test": "^1.58.2",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/dagre": "^0.7.52",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "jsdom": "^29.0.1",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.3",
+    "vitest": "^4.1.2"
+  }
+}

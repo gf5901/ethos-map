@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-equal-protection",
+  "type": "principle",
+  "name": "Equal protection of the laws",
+  "description": "States must not deny any person within their jurisdiction the equal protection of the laws—requiring that classifications among persons be justified by standards that vary with the context and the right at stake.",
+  "tags": ["us-law", "constitutional-law", "equality", "rights"],
+  "foundationStrength": 5,
+  "foundationStrengthRationale": "Core Fourteenth Amendment strand driving anti-discrimination and classification review.",
+  "pros": [
+    {
+      "claim": "Provides a constitutional lever against invidious discrimination and arbitrary class legislation.",
+      "evidence": "Used to invalidate or strictly scrutinize discriminatory state action across domains.",
+      "citations": ["fourteenth-equal-protection"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Tiered scrutiny and malleable standards generate persistent uncertainty and high-stakes judicial balancing.",
+      "evidence": "Ongoing doctrinal controversy over which groups and interests trigger which level of review.",
+      "citations": ["equal-protection-scrutiny-debate"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "U.S. Const. amend. XIV § 1"
+    }
+  ],
+  "citations": {
+    "fourteenth-equal-protection": {
+      "title": "U.S. Constitution, Fourteenth Amendment, Section 1 (Equal Protection Clause)",
+      "type": "statute",
+      "year": 1868
+    },
+    "equal-protection-scrutiny-debate": {
+      "title": "Equal protection tiers of scrutiny — overview",
+      "type": "journal-article",
+      "year": 2019
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

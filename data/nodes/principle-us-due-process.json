@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-due-process",
+  "type": "principle",
+  "name": "Due process of law",
+  "description": "Government must follow fair procedures—and in substantive strands, respect certain baseline protections—before depriving persons of life, liberty, or property (Fifth Amendment as to federal power; Fourteenth as to states).",
+  "tags": ["us-law", "constitutional-law", "procedure", "rights"],
+  "foundationStrength": 5,
+  "foundationStrengthRationale": "Deeply embedded in federal and state practice; central to modern rights litigation.",
+  "pros": [
+    {
+      "claim": "Guards against arbitrary punishment, secret proceedings, and capricious administrative action.",
+      "evidence": "Procedural requirements such as notice and hearing are standard features of deprivation scenarios.",
+      "citations": ["fifth-fourteenth-due-process"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Open-ended phrasing invites wide judicial discretion and disagreement over what process is “due” and what substance is protected.",
+      "evidence": "Long-running doctrinal splits over incorporation, fundamental rights, and administrative due process.",
+      "citations": ["due-process-open-texture"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "U.S. Const. amends. V, XIV § 1"
+    }
+  ],
+  "citations": {
+    "fifth-fourteenth-due-process": {
+      "title": "U.S. Constitution, Fifth and Fourteenth Amendments (Due Process Clauses)",
+      "type": "statute",
+      "year": 1791
+    },
+    "due-process-open-texture": {
+      "title": "Due process doctrine — variability and debate",
+      "type": "journal-article",
+      "year": 2017
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

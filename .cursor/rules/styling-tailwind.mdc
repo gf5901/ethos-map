@@ -1,0 +1,19 @@
+---
+description: Tailwind CSS v4 and global styling conventions
+globs: src/**/*.tsx,src/**/*.css
+alwaysApply: false
+---
+
+# Styling (Tailwind v4)
+
+- **Utility-first** in TSX: prefer Tailwind classes over ad-hoc inline `style` unless a value is truly dynamic.
+- **Design tokens**: shared colors and theme live in `src/app/globals.css` (`:root`, `.dark`, CSS variables). Extend tokens there instead of hard-coding hex values in many components.
+- **Dark mode**: this project uses a **class-based** dark variant (`@custom-variant dark`). Respect `.dark` on an ancestor when adding new themed surfaces.
+- **Global CSS**: keep `globals.css` for imports, `@layer`, variables, and rare global resets—not for feature-specific component styling (that belongs in components + utilities).
+- **Consistency**: match spacing, typography, and border radius patterns used in sibling components (e.g. headers, cards on the graph).
+- **Typography**: follow `docs/typography.md`. Prefer the shared `text-label` utility for uppercase section/field labels; use `max-w-prose` or `max-w-readable` for long reading blocks; keep page titles at `text-3xl font-semibold tracking-tight` unless a screen clearly needs a different level.
+
+```tsx
+// Prefer utilities + CSS variables from globals
+<div className="rounded-lg border border-neutral-200 bg-[var(--background)] px-4 py-2 dark:border-neutral-800" />
+```

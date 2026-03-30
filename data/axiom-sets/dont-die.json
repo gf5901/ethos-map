@@ -1,0 +1,13 @@
+{
+  "id": "dont-die",
+  "name": "Immortalism / Don't Die",
+  "description": "Life extension, bodily autonomy, evidence-based policy, and the elimination of preventable death as foundational values.",
+  "axiomIds": [
+    "axiom-life-has-value",
+    "axiom-preventable-death-is-unacceptable",
+    "axiom-bodily-sovereignty",
+    "axiom-evidence-based-policy"
+  ],
+  "color": "#16A34A",
+  "icon": "infinity"
+}

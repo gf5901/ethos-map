@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-rule-of-law",
+  "type": "principle",
+  "name": "Rule of law",
+  "description": "Government officials—including law enforcement and courts—are bound by law; powers are exercised through known rules and procedures rather than arbitrary will, supporting predictability and accountability.",
+  "tags": ["us-law", "governance", "legitimacy"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Widely invoked across U.S. legal culture as an ideal, though its content is contested and partially enforced through many distinct doctrines.",
+  "pros": [
+    {
+      "claim": "Anchors legitimacy in public norms that constrain coercion and protect expectations.",
+      "evidence": "Constitutional limits, administrative procedure, and judicial review are often framed as rule-of-law mechanisms.",
+      "citations": ["rule-of-law-ideal"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "The phrase is capacious enough to be used rhetorically on opposing sides of the same dispute.",
+      "evidence": "Competing invocations in debates over discretion, emergencies, and enforcement priorities.",
+      "citations": ["rule-of-law-contested-use"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "no-data",
+      "citation": "Cross-cutting theme; not a single clause"
+    }
+  ],
+  "citations": {
+    "rule-of-law-ideal": {
+      "title": "Rule of law — basic elements (generality, stability, prospectivity)",
+      "type": "book",
+      "year": 2016
+    },
+    "rule-of-law-contested-use": {
+      "title": "Contested meanings of the rule of law in public debate",
+      "type": "journal-article",
+      "year": 2021
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

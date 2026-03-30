@@ -1,0 +1,12 @@
+{
+  "id": "axiom-preventable-death-is-unacceptable",
+  "type": "axiom",
+  "name": "We shouldn't accept deaths we could prevent",
+  "plainSummary": "If we already know how to prevent a death—through medicine, policy, or basic infrastructure—we should not accept that death without a very strong reason. That stance is common in public health and in longevity-focused worldviews.",
+  "whyRoot": "Once you can prevent harm at reasonable cost, letting it happen anyway usually needs a positive defense—otherwise neglect looks like a choice. This root ties ‘we could have acted’ to moral urgency, not just regret after the fact.",
+  "description": "Foundational commitment that deaths avoidable through known means (medical, policy, or infrastructure) ought not to occur without strong justification; common in public-health and longevity-oriented frameworks.",
+  "tags": ["foundational", "public-health", "longevity"],
+  "citations": {},
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

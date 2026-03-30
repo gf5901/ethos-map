@@ -1,0 +1,38 @@
+{
+  "id": "legal-concept-right-to-experimental-therapy",
+  "type": "legal-concept",
+  "name": "Right to access experimental therapy",
+  "description": "A legal concept describing circumstances under which patients may access therapies not yet fully approved under ordinary regulatory pathways.",
+  "tags": ["medical-autonomy", "experimental-access"],
+  "foundationStrength": 3,
+  "foundationStrengthRationale": "Depends heavily on jurisdiction-specific statutes and regulatory exceptions.",
+  "pros": [
+    {
+      "claim": "Can expand options for patients facing serious or life-threatening conditions.",
+      "evidence": "Expanded access and similar programs exist specifically to address urgent unmet medical need.",
+      "citations": ["expanded-access-rationale"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "May expose patients to interventions with uncertain benefit-risk profiles.",
+      "evidence": "Early-phase evidence often does not establish efficacy; harm can still occur.",
+      "citations": ["early-phase-evidence-limit"]
+    }
+  ],
+  "citations": {
+    "expanded-access-rationale": {
+      "title": "Expanded access programs — rationale",
+      "type": "government-report",
+      "year": 2018,
+      "url": "https://www.fda.gov/news-events/public-health-focus/expanded-access"
+    },
+    "early-phase-evidence-limit": {
+      "title": "Clinical evidence limitations in early-phase trials",
+      "type": "journal-article",
+      "year": 2021
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

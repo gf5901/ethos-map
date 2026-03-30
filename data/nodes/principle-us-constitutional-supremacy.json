@@ -1,0 +1,44 @@
+{
+  "id": "principle-us-constitutional-supremacy",
+  "type": "principle",
+  "name": "Constitutional supremacy",
+  "description": "The U.S. Constitution is the supreme law of the land; inconsistent statutes and other government acts yield to it (including state law under the Supremacy Clause).",
+  "tags": ["us-law", "constitutional-law", "federal"],
+  "foundationStrength": 5,
+  "foundationStrengthRationale": "Expressly stated in Article VI; uniformly treated as bedrock in federal jurisprudence.",
+  "pros": [
+    {
+      "claim": "Creates a single hierarchy of norms so rights and structural limits are not overridden by ordinary politics alone.",
+      "evidence": "Judicial invalidation of conflicting enactments is treated as a normal mechanism for enforcing written limits.",
+      "citations": ["art-vi-supremacy"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "Shifts contentious value questions into constitutional interpretation, sometimes amplifying judicial power and social polarization.",
+      "evidence": "High-stakes disputes often turn on contested readings of open-textured provisions.",
+      "citations": ["constitutional-polarization-note"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "citation": "U.S. Const. art. VI, cl. 2"
+    }
+  ],
+  "citations": {
+    "art-vi-supremacy": {
+      "title": "U.S. Constitution, Article VI, Clause 2 (Supremacy Clause)",
+      "type": "statute",
+      "year": 1789
+    },
+    "constitutional-polarization-note": {
+      "title": "Constitutional politics and interpretive disagreement — introductory note",
+      "type": "other",
+      "year": 2020
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}

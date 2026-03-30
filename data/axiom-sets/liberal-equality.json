@@ -1,0 +1,8 @@
+{
+  "id": "liberal-equality",
+  "name": "Liberal equality",
+  "description": "Default respect for liberty paired with equal standing for persons—typical of modern liberal and constitutional traditions.",
+  "axiomIds": ["axiom-liberty-as-default", "axiom-equal-moral-consideration"],
+  "color": "#2563EB",
+  "icon": "balance"
+}

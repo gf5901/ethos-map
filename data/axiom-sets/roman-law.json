@@ -1,0 +1,14 @@
+{
+  "id": "roman-law",
+  "name": "Roman law tradition",
+  "description": "Classical Roman foundations—good faith, equity, and systematic civilian legal order—as roots for viewing downstream rules and institutions.",
+  "axiomIds": [
+    "axiom-honesty-in-dealings",
+    "axiom-fair-dealing-reciprocity",
+    "axiom-fidelity-to-agreements",
+    "axiom-aequitas",
+    "axiom-civilian-legal-order"
+  ],
+  "color": "#7F1D1D",
+  "icon": "column"
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ethosmap.org/schema/edge.schema.json",
+  "title": "EthosMap Edge Bundle",
+  "type": "object",
+  "required": ["edges"],
+  "additionalProperties": false,
+  "properties": {
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "from", "to", "type", "strength"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": [
+              "derived-from",
+              "inspired-by",
+              "contradicts",
+              "extends",
+              "restricts",
+              "enacted-as"
+            ]
+          },
+          "strength": {
+            "type": "string",
+            "enum": ["strong", "moderate", "weak"]
+          }
+        }
+      }
+    }
+  }
+}

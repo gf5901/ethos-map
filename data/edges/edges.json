@@ -1,0 +1,116 @@
+{
+  "edges": [
+    {
+      "id": "edge-001",
+      "from": "axiom-life-has-value",
+      "to": "principle-bodily-autonomy",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-004",
+      "from": "axiom-bodily-sovereignty",
+      "to": "principle-bodily-autonomy",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-002",
+      "from": "principle-bodily-autonomy",
+      "to": "legal-concept-right-to-experimental-therapy",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-003",
+      "from": "legal-concept-right-to-experimental-therapy",
+      "to": "statute-us-right-to-try-2018",
+      "type": "enacted-as",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-005",
+      "from": "axiom-written-constitution-as-supreme-law",
+      "to": "principle-us-constitutional-supremacy",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-006",
+      "from": "axiom-written-constitution-as-supreme-law",
+      "to": "principle-us-federalism",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-007",
+      "from": "axiom-written-constitution-as-supreme-law",
+      "to": "principle-us-separation-of-powers",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-008",
+      "from": "principle-us-separation-of-powers",
+      "to": "principle-us-judicial-review",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-009",
+      "from": "axiom-precedent-as-law",
+      "to": "principle-us-stare-decisis",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-010",
+      "from": "axiom-precedent-as-law",
+      "to": "principle-us-common-law-tradition",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-011",
+      "from": "axiom-liberty-as-default",
+      "to": "principle-us-due-process",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-012",
+      "from": "axiom-equal-moral-consideration",
+      "to": "principle-us-equal-protection",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-013",
+      "from": "axiom-liberty-as-default",
+      "to": "principle-us-rule-of-law",
+      "type": "derived-from",
+      "strength": "moderate"
+    },
+    {
+      "id": "edge-014",
+      "from": "axiom-honesty-in-dealings",
+      "to": "principle-bona-fides",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-015",
+      "from": "axiom-fair-dealing-reciprocity",
+      "to": "principle-bona-fides",
+      "type": "derived-from",
+      "strength": "strong"
+    },
+    {
+      "id": "edge-016",
+      "from": "axiom-fidelity-to-agreements",
+      "to": "principle-bona-fides",
+      "type": "derived-from",
+      "strength": "strong"
+    }
+  ]
+}

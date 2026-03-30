@@ -1,0 +1,68 @@
+{
+  "id": "statute-us-right-to-try-2018",
+  "type": "statute",
+  "name": "US Right to Try Act",
+  "description": "Federal law allowing terminally ill patients to access experimental treatments that have completed Phase I clinical trials but are not yet FDA-approved.",
+  "year": 2018,
+  "tags": ["dont-die", "medical-autonomy", "us-federal"],
+  "foundationStrength": 4,
+  "foundationStrengthRationale": "Broadly supported across party lines; some concerns from FDA about safety oversight gaps.",
+  "pros": [
+    {
+      "claim": "Expands patient autonomy over their own medical decisions at end of life.",
+      "evidence": "Consistent with Cruzan v. Director, MDH (1990) establishing right to refuse treatment, logically extendable to right to pursue treatment.",
+      "citations": ["cruzan-v-missouri-1990"]
+    },
+    {
+      "claim": "Provides hope and options where none previously existed within the regulatory framework.",
+      "evidence": "Prior to the act, expanded access (compassionate use) required lengthy FDA review averaging 4+ months.",
+      "citations": ["fda-expanded-access-report-2017"]
+    }
+  ],
+  "cons": [
+    {
+      "claim": "May expose vulnerable patients to ineffective or harmful treatments without adequate safety data.",
+      "evidence": "Phase I trials establish basic safety but not efficacy; only ~10% of Phase I drugs reach approval.",
+      "citations": ["fda-drug-approval-stats"]
+    },
+    {
+      "claim": "Could undermine clinical trial enrollment if patients can access drugs outside trials.",
+      "evidence": "Some researchers report difficulty recruiting for Phase II/III trials in therapeutic areas where Right to Try is active.",
+      "citations": ["clinical-trial-enrollment-impact-2020"]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "id": "us-federal",
+      "status": "enacted",
+      "date": "2018-05-30",
+      "citation": "Pub.L. 115–176, 132 Stat. 1372"
+    }
+  ],
+  "citations": {
+    "cruzan-v-missouri-1990": {
+      "title": "Cruzan v. Director, Missouri Department of Health",
+      "type": "case-law",
+      "year": 1990,
+      "url": "https://supreme.justia.com/cases/federal/us/497/261/"
+    },
+    "fda-expanded-access-report-2017": {
+      "title": "Expanded Access Program Report",
+      "type": "government-report",
+      "year": 2017,
+      "url": "https://www.fda.gov/news-events/expanded-access"
+    },
+    "fda-drug-approval-stats": {
+      "title": "Drug Approval Statistics",
+      "type": "government-data",
+      "url": "https://www.fda.gov/drugs/drug-approvals-and-databases"
+    },
+    "clinical-trial-enrollment-impact-2020": {
+      "title": "Impact of Right to Try on Clinical Trial Enrollment",
+      "type": "journal-article",
+      "year": 2020
+    }
+  },
+  "createdAt": "2026-03-29",
+  "updatedAt": "2026-03-29"
+}
